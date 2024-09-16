@@ -9,7 +9,7 @@ app.use((req, res, next) => {
 });
 
 // Tvůj kód Expressu zde
-app.get('/cast-webu', (req, res) => {
+app.get('/about', (req, res) => {
     res.send(`
         <!DOCTYPE html>
         <html lang="cs">
