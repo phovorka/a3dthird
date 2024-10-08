@@ -17,14 +17,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
   return (
     <Router>
-      <div className="App">
+         <main>
+      <div class="container py-3">
         <Header />
+           </div>
           <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/demo" element={<Demo />} />
           </Routes>
+     
         <Footer />
-      </div>
+      
+      </main>
     </Router>
   );
 }

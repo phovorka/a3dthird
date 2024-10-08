@@ -7,11 +7,13 @@ import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
-      <div className="Home">
+    <section>
+      <div className="Home container py-3">
           <HeroSection />
+      </div>
           <Featurette />
           <ContactForm />
-      </div>
+     </section>
     
   );
 }
