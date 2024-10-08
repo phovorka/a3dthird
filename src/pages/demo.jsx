@@ -7,13 +7,11 @@ import Footer from '../components/Footer';
 
 const Demo = () => {
   return (
-    <div className="demo-page">
-      <main>
-  
+   
+    
       <A3d />
-      </main>
-      <Footer />
-    </div>
+     
+   
   );
 };
 
