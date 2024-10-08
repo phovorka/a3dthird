@@ -117,7 +117,7 @@ const A3d = () => {
             {isFullScreen && <button className="exit-Fullscreen" onClick={exitFullscreen}></button>}
 
             {/* Tools Visibility Toggle */}
-            <div id="usedTools" className="btn3 btn" onClick={toggleTools}></div>
+            <div id="usedTools" className="btn3 A3d__btn" onClick={toggleTools}></div>
             {toolsVisible && (
               <div id="tools">
                 <p>Použité díly</p>
@@ -130,8 +130,8 @@ const A3d = () => {
             {/* Animation Toolbar */}
             {animationToolbarVisible && (
               <div className="animation-Toolbar">
-                <button className="btn play" onClick={() => modelViewerRef.current.play()}></button>
-                <button className="btn pause" onClick={() => modelViewerRef.current.pause()}></button>
+                <button className="A3d__btn play" onClick={() => modelViewerRef.current.play()}></button>
+                <button className="A3d__btn pause" onClick={() => modelViewerRef.current.pause()}></button>
                 <input
                   type="range"
                   min="0"
