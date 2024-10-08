@@ -15,13 +15,13 @@ const Header = () => {
             />
           </Link>
           <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <Link className="me-3 py-2 text-dark text-decoration-none" to="/Featurette">
+            <Link className="me-3 py-2 text-dark text-decoration-none" to="/features">
               Výhody
             </Link>
-            <Link className="me-3 py-2 text-dark text-decoration-none" to="/pages/demo">
+            <Link className="me-3 py-2 text-dark text-decoration-none" to="/demo">
               Demo
             </Link>
-            <Link className="py-2 text-dark text-decoration-none" to="/ContactForm">
+            <Link className="py-2 text-dark text-decoration-none" to="/contact">
               Kontakt
             </Link>
           </nav>
