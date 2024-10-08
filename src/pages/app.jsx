@@ -27,6 +27,7 @@ function App() {
           </Routes>
           <HeroSection />
           <Featurette />
+          <ModelViewer/>
           <ContactForm />
         </main>
         <Footer />
