@@ -10,8 +10,6 @@ import ModelViewer from "../components/ModelViewer";
 import Demo from "./demo";
 
 import '@google/model-viewer'; // Import the model-viewer library
-import "../styles/index.css";
-import "../styles/index3d.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {

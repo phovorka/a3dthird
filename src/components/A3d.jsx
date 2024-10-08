@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import  '../styles/A3d.module.css'; // Import only for this component
+import style from '../styles/A3d.module.css'; // Import only for this component
 import '@google/model-viewer'; // Import the model-viewer library
 
 
@@ -110,7 +110,7 @@ const A3d = () => {
             camera-orbit={slides[0].cameraOrbit}
             min-camera-orbit={slides[0].minOrbit}
             camera-target={slides[0].cameraTarget}
-            style={{ width: '100%', height: '500px' }}
+           
           >
             <button className="fullScreen" onClick={openFullscreen}></button>
             {isFullScreen && <button className="exit-Fullscreen" onClick={exitFullscreen}></button>}
@@ -120,7 +120,7 @@ const A3d = () => {
             {toolsVisible && (
               <div id="tools">
                 <p>Použité díly</p>
-                <img id="tool1" className="img-tools" alt="tool" src="tool1-image-url" />
+                <img id="tool1" className="img-tools" alt="tool" src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505" />
                 <img id="tool2" className="img-tools" alt="tool" src="tool2-image-url" />
                 {/* Add more tool images here... */}
               </div>

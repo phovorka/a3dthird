@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Co
 import HeroSection from "../components/HeroSection";
 import Featurette from "../components/Featurette";
 import ContactForm from "../components/ContactForm";
+import '../styles/index.css'; // Import any global CSS styles
+import '../styles/index3d.css'; // Import 
 
 const Home = () => {
   return (
