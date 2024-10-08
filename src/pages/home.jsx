@@ -1,7 +1,6 @@
 import * as React from "react";
-import { animated } from "react-spring";
-import { useWiggle } from "../hooks/wiggle";
-import { Link } from "wouter";
+
+
 
 // Our language strings for the header
 const strings = [
