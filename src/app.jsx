@@ -1,6 +1,5 @@
 // App.js
 import React from 'react';
-import '@google/model-viewer';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Featurette from './components/Featurette';
