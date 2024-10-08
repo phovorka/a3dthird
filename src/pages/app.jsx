@@ -6,6 +6,7 @@ import HeroSection from "../components/HeroSection";
 import Featurette from "../components/Featurette";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import ModelViewer from "../components/ModelViewer";
 import Demo from "./demo";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@google/model-viewer'; // Import the model-viewer library

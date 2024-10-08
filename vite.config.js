@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-   optimizeDeps: {
-    include: ['@google/model-viewer', 'three'],
+  optimizeDeps: {
+    include: ['@google/model-viewer', 'three'], 
   },
   build: {
     outDir: "build"
