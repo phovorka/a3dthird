@@ -1,21 +1,21 @@
 // components/ModelViewer.js
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '@google/model-viewer'; // Import the model-viewer library
-
 
 const ModelViewer = ({ src }) => {
   const modelViewerRef = useRef(null); // Create a ref for the model-viewer element
+  const [sliderValue, setSliderValue] = useState(0); // Track the slider value
+  const [isDragging, setIsDragging] = useState(false); // Track if the user is interacting with the slider
 
   useEffect(() => {
     const modelViewer = modelViewerRef.current;
 
     if (modelViewer) {
-      // Bind the model-viewer logic from a3dviewer.js here
       initializeModelViewer(modelViewer);
     }
 
     return () => {
-      // Cleanup if necessary when component unmounts
+      // Cleanup listeners if necessary
     };
   }, []);
 
@@ -24,44 +24,59 @@ const ModelViewer = ({ src }) => {
     const playBtn = modelViewer.querySelector('.play');
     const pauseBtn = modelViewer.querySelector('.pause');
 
-    playBtn.addEventListener('click', function () {
-      this.play();
-    }.bind(modelViewer));
+    playBtn.addEventListener('click', () => {
+      modelViewer.play();
+    });
 
-    pauseBtn.addEventListener('click', function () {
-      this.pause();
-    }.bind(modelViewer));
+    pauseBtn.addEventListener('click', () => {
+      modelViewer.pause();
+    });
 
     // Progress bar
     const progress = modelViewer.querySelector('.progress');
     const bar = progress.querySelector('.bar');
 
-    modelViewer.addEventListener('progress', function (event) {
+    // Listen to model-viewer progress updates
+    modelViewer.addEventListener('progress', (event) => {
       const { totalProgress } = event.detail;
       progress.classList.toggle('show', totalProgress < 1);
       bar.style.transform = `scaleX(${totalProgress})`;
     });
 
-    // Slider animation
+    // Update the slider based on the model's current time
     const slider = modelViewer.querySelector('.anim-Range');
-    const updateSlider = function () {
-      slider.max = Math.floor(this.duration * 100) / 100;
-      slider.value = this.currentTime;
-    }.bind(modelViewer);
+    const updateSlider = () => {
+      if (!isDragging) {
+        const currentTime = modelViewer.currentTime;
+        const duration = modelViewer.duration;
+        const newValue = (currentTime / duration) * 100;
+        setSliderValue(newValue); // Update the React state for the slider
+      }
+    };
 
-    slider.addEventListener('input', function (event) {
-      this.currentTime = event.target.value;
-    }.bind(modelViewer));
+    // Sync slider value with model-viewer's currentTime
+    slider.addEventListener('input', (event) => {
+      const value = event.target.value;
+      const duration = modelViewer.duration;
+      modelViewer.currentTime = (value / 100) * duration;
+    });
 
-    setInterval(updateSlider, 100);
+    // Set an interval to update the slider every 100ms
+    const interval = setInterval(updateSlider, 100);
 
-    // Hide animation toolbar when no animation appears
-    modelViewer.addEventListener('load', function () {
-      const animations = this.availableAnimations;
-      const numberOfAnimations = animations.length;
-      const animToolbar = this.querySelector('.animation-Toolbar');
-      animToolbar.style.display = numberOfAnimations ? 'block' : 'none';
-    }.bind(modelViewer));
+    // Handle the cleanup of the interval on component unmount
+    return () => {
+      clearInterval(interval);
+    };
+  };
+
+  const handleSliderChange = (event) => {
+    const value = event.target.value;
+    setSliderValue(value); // Update the slider's state
+
+    const modelViewer = modelViewerRef.current;
+    const duration = modelViewer.duration;
+    modelViewer.currentTime = (value / 100) * duration; // Sync with model viewer's current time
   };
 
   return (
@@ -81,7 +96,17 @@ const ModelViewer = ({ src }) => {
       <div className="animation-Toolbar">
         <button className="btn play"></button>
         <button className="btn pause"></button>
-        <input type="range" min="0" value="0" step="0.1" className="anim-Range" />
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="0.1"
+          value={sliderValue}
+          onChange={handleSliderChange}
+          onMouseDown={() => setIsDragging(true)} // Set dragging to true
+          onMouseUp={() => setIsDragging(false)} // Set dragging to false
+          className="anim-Range"
+        />
       </div>
       <div className="progress" slot="progress-bar">
         <div className="bar"></div>
