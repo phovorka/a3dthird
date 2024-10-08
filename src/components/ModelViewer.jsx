@@ -1,5 +1,8 @@
 // components/ModelViewer.js
 import React, { useEffect } from 'react';
+import '@google/model-viewer'; 
+
+
 
 const ModelViewer = ({ src }) => {
   useEffect(() => {
