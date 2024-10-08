@@ -1,6 +1,6 @@
 // components/ModelViewer.js
 import React, { useEffect, useRef } from 'react';
-//import '@google/model-viewer'; // Import the model-viewer library
+import '@google/model-viewer'; // Import the model-viewer library
 
 
 const ModelViewer = ({ src }) => {
