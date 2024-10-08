@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from '../styles/A3d.module.css'; // Import only for this component
+import  '../styles/A3d.module.css'; // Import only for this component
 import '@google/model-viewer'; // Import the model-viewer library
 
 
@@ -84,18 +84,19 @@ const A3d = () => {
 
   return (
     <main>
-      <header className="d-flex flex-column flex-md-row align-items-center p-1 mb-1 border-bottom">
-        <a href="/" className="d-flex align-items-center text-dark text-decoration-none">
-          <img
-            src="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/Assembly.svg?v=1715948982135"
-            alt="Assembly 3D"
-            width="150px"
-          />
-          <span className="ps-3">DEMO</span>
-        </a>
-      </header>
-
-      <div className="assembly-Instruction pt-4">
+    <div className="assembly-Instruction pt-4">
+    <div className="header">
+      <img
+        src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/ikea.svg?v=1665664365999"
+        className="header-image p-1"
+        alt="IKEA Logo" // Adding alt text for accessibility
+      />
+      <h5>
+        <p className="ps-2 btn">
+          <b>IKEA</b> GULLIVER Cot
+        </p>
+      </h5>
+    </div>
         <div className="viewer" id="viewer">
           <model-viewer
             ref={modelViewerRef}
@@ -104,6 +105,7 @@ const A3d = () => {
             enable-pan
             autoplay
             shadow-intensity="1"
+            className="model"
             src={slides[0].src}
             camera-orbit={slides[0].cameraOrbit}
             min-camera-orbit={slides[0].minOrbit}
@@ -114,7 +116,7 @@ const A3d = () => {
             {isFullScreen && <button className="exit-Fullscreen" onClick={exitFullscreen}></button>}
 
             {/* Tools Visibility Toggle */}
-            <div id="usedTools" className="btn3" onClick={toggleTools}></div>
+            <div id="usedTools" className="btn3 btn" onClick={toggleTools}></div>
             {toolsVisible && (
               <div id="tools">
                 <p>Použité díly</p>
@@ -159,25 +161,9 @@ const A3d = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="w-100 py-4 flex-shrink-0" id="footer">
-        <div className="container py-4">
-          <div className="m-auto text-center pb-4">
-            <img
-              src="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/Assembly.svg?v=1715948982135"
-              alt="Logo"
-              style={{ width: '150px' }}
-            />
-          </div>
-          <h5>O nás</h5>
-          <p>
-            Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a manuálů, tak jak jej známe dnes.
-            {/* More footer content here */}
-          </p>
-        </div>
-      </footer>
-    </main>
+</main>
+     
+   
   );
 };
 
