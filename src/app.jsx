@@ -1,11 +1,12 @@
 // App.js
 import React from 'react';
-import Header from './src/components/Header';
-import HeroSection from './src/components/HeroSection';
-import Featurette from './src/components/Featurette';
-import ContactForm from './src/components/ContactForm';
-import Footer from './src/components/Footer';
-import './src/App.css';
+import Bootstrap from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import Featurette from './components/Featurette';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+import './styles/index.css';
 
 function App() {
   return (

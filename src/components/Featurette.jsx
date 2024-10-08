@@ -1,6 +1,6 @@
 // components/Featurette.js
 import React from 'react';
-import ModelViewer from './src/components/ModelViewer';
+import ModelViewer from './ModelViewer';
 
 const Featurette = () => {
   return (
