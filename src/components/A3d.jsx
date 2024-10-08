@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import style from '../styles/A3d.module.css'; // Import only for this component
+import style from '../styles/A3d.css'; // Import only for this component
 import '@google/model-viewer'; // Import the model-viewer library
 
 
@@ -106,6 +106,7 @@ const A3d = () => {
             autoplay
             shadow-intensity="1"
             className="model"
+            id="A3d__viewer"
             src={slides[0].src}
             camera-orbit={slides[0].cameraOrbit}
             min-camera-orbit={slides[0].minOrbit}
