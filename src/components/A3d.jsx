@@ -2,7 +2,7 @@
 import React from 'react';
 //import ModelViewer from './ModelViewer'; // Reuse the ModelViewer component
 
-const a3d= () => {
+const A3d= () => {
   return (
     <div className="a3d-section container text-center my-5">
       <h1 className="display-4">3D Demo</h1>
@@ -15,4 +15,4 @@ const a3d= () => {
   );
 };
 
-export default a3d;
+export default A3d;
