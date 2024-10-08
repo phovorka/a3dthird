@@ -1,6 +1,6 @@
 // components/A3D.js
 import React from 'react';
-//import ModelViewer from './ModelViewer'; // Reuse the ModelViewer component
+import '@google/model-viewer'; // Import the model-viewer library
 
 const A3d= () => {
   return (

@@ -7,8 +7,9 @@ import Featurette from "../components/Featurette";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Demo from "./demo";
-import '@google/model-viewer'; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
+import '@google/model-viewer'; // Import the model-viewer library
+
 import "../styles/index.css";
 
 function App() {
