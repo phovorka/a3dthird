@@ -4,12 +4,13 @@ import Header from '../components/Header';
 import A3d from '../components/A3d';
 import Footer from '../components/Footer';
 
+
 const Demo = () => {
   return (
     <div className="demo-page">
-      <Header />
       <main>
-      <a3d />
+  
+      <A3d />
       </main>
       <Footer />
     </div>
