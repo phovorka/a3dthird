@@ -21,7 +21,7 @@ function App() {
       <div className="App">
         <Header />
           <Routes>
-            <Route path="/home" element={<HeroSection />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/demo" element={<Demo />} />
           </Routes>
         <Footer />
