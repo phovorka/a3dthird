@@ -21,6 +21,10 @@ const A3d = () => {
       description: "1) Vlož dřevěné kolíky",
       backgroundImage:
         "https://cdn.glitch.com/2f80c958-3bc4-4f47-8e97-6a5c8684ac2c%2Fillustration.svg?v=1618196579405", // Background image URL for the first slide
+     tools: [
+        { imgSource: 'https://example.com/tool1.png', label: 'Hammer' },
+        { imgSource: 'https://example.com/tool2.png', label: 'Screwdriver' },
+      ],
     },
     {
       src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
@@ -30,6 +34,65 @@ const A3d = () => {
       minFov: "20deg",
       description: "2) Přišroubuj přední čelo",
       backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+          tools: [
+        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
+        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+      ],
+    },
+    
+        {
+      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      cameraOrbit: "40deg 70deg 3m",
+      cameraTarget: "-6m 10m 2m",
+      minOrbit: "auto auto 40m",
+      minFov: "20deg",
+      description: "2) Přišroubuj přední čelo",
+      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+          tools: [
+        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
+        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+      ],
+    },
+    
+        {
+      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      cameraOrbit: "40deg 70deg 3m",
+      cameraTarget: "-6m 10m 2m",
+      minOrbit: "auto auto 40m",
+      minFov: "20deg",
+      description: "2) Přišroubuj přední čelo",
+      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+          tools: [
+        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
+        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+      ],
+    },
+    
+        {
+      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      cameraOrbit: "40deg 70deg 3m",
+      cameraTarget: "-6m 10m 2m",
+      minOrbit: "auto auto 40m",
+      minFov: "20deg",
+      description: "2) Přišroubuj přední čelo",
+      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+          tools: [
+        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
+        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+      ],
+    },
+        {
+      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      cameraOrbit: "40deg 70deg 3m",
+      cameraTarget: "-6m 10m 2m",
+      minOrbit: "auto auto 40m",
+      minFov: "20deg",
+      description: "2) Přišroubuj přední čelo",
+      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+          tools: [
+        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
+        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+      ],
     },
     // Add more slides as needed...
   ];
@@ -163,28 +226,16 @@ const A3d = () => {
               ></button>
             )}
 
-            {/* Tools Visibility Toggle */}
-            <div
-              id="usedTools"
-              className="btn3 A3d__btn"
-              onClick={toggleTools}
-            ></div>
+       <div id="usedTools" className="btn3 A3d__btn" onClick={toggleTools}></div>
             {toolsVisible && (
               <div id="tools">
                 <p>Použité díly</p>
-                <img
-                  id="tool1"
-                  className="img-tools"
-                  alt="tool"
-                  src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505"
-                />
-                <img
-                  id="tool2"
-                  className="img-tools"
-                  alt="tool"
-                  src="tool2-image-url"
-                />
-                {/* Add more tool images here... */}
+                {slides[currentSlide].tools.map((tool, index) => (
+                  <div key={index} className="tool-item">
+                    <img src={tool.imgSource} className="img-tools" alt={tool.label} />
+                    <p>{tool.label}</p>
+                  </div>
+                ))}
               </div>
             )}
 
