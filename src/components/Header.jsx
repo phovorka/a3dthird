@@ -18,7 +18,7 @@ const Header = () => {
             <Link className="me-3 py-2 text-dark text-decoration-none" to="/features">
               Výhody
             </Link>
-            <Link className="me-3 py-2 text-dark text-decoration-none" to="/demo">
+            <Link className="me-3 py-2 text-dark text-decoration-none" to="/pages/demo">
               Demo
             </Link>
             <Link className="py-2 text-dark text-decoration-none" to="/contact">
