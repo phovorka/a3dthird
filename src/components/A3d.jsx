@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import style from '../styles/A3d.css'; 
-import '@google/model-viewer'; 
+import style from '../styles/A3d.css'; // Import only for this component
+import '@google/model-viewer'; // Import the model-viewer library
 
 
 const A3d = () => {
@@ -27,7 +27,7 @@ const A3d = () => {
       minOrbit: 'auto auto 40m',
       minFov: '20deg',
       description: '2) Přišroubuj přední čelo',
-      backgroundImage: 'https://example.com/path/to/slide2-image.png', 
+      backgroundImage: 'https://example.com/path/to/slide2-image.png', // Background image URL for the second slide
 
     },
     // Add more slides as needed...
@@ -84,6 +84,8 @@ const A3d = () => {
 
     setCurrentSlide(slideIndex);
   };
+  
+  
 
   return (
     <main>
