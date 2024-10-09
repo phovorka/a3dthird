@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import style from '../styles/A3d.css'; // Import only for this component
-import '@google/model-viewer'; // Import the model-viewer library
+import style from '../styles/A3d.css'; 
+import '@google/model-viewer'; 
 
 
 const A3d = () => {
@@ -18,6 +18,7 @@ const A3d = () => {
       minOrbit: 'auto auto 35m',
       minFov: '20deg',
       description: '1) Vlož dřevěné kolíky',
+      backgroundImage: 'https://cdn.glitch.com/2f80c958-3bc4-4f47-8e97-6a5c8684ac2c%2Fillustration.svg?v=1618196579405', // Background image URL for the first slide
     },
     {
       src: 'https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436',
@@ -26,6 +27,8 @@ const A3d = () => {
       minOrbit: 'auto auto 40m',
       minFov: '20deg',
       description: '2) Přišroubuj přední čelo',
+      backgroundImage: 'https://example.com/path/to/slide2-image.png', 
+
     },
     // Add more slides as needed...
   ];
@@ -150,7 +153,7 @@ const A3d = () => {
                 <button
                   className={`slide-Picture ${currentSlide === index ? 'selected' : ''}`}
                   onClick={() => switchSrc(index)}
-                  style={{ backgroundImage: `url('path/to/slide/image${index + 1}.png')` }}
+        style={{ backgroundImage: `url(${slide.backgroundImage})` }} // Using the backgroundImage for each slide
                 >
                   <span className="arrow-Slide"></span>
                 </button>
