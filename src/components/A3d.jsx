@@ -9,6 +9,8 @@ const A3d = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [toolsVisible, setToolsVisible] = useState(false);
   const [animationToolbarVisible, setAnimationToolbarVisible] = useState(false);
+   const [sliderValue, setSliderValue] = useState(0); // Slider value as a percentage
+  const [isDragging, setIsDragging] = useState(false); // Track if the slider is being dragged
 
   const slides = [
     {
@@ -33,25 +35,44 @@ const A3d = () => {
     // Add more slides as needed...
   ];
 
-  useEffect(() => {
+useEffect(() => {
     const modelViewer = modelViewerRef.current;
 
-    // Hide progress bar after model loads
+    // Hide progress bar after model loads and check if there are available animations
     const handleLoad = () => {
       const progress = modelViewer.querySelector('.progress');
       if (progress) progress.style.display = 'none';
 
       const animToolbar = modelViewer.querySelector('.animation-Toolbar');
       setAnimationToolbarVisible(modelViewer.availableAnimations.length > 0);
+
+      // Start syncing the slider with the animation's time
+      const slider = modelViewer.querySelector('.anim-Range');
+      const updateSlider = () => {
+        if (!isDragging) {
+          const currentTime = modelViewer.currentTime;
+          const duration = modelViewer.duration;
+          if (duration > 0) {
+            const newValue = (currentTime / duration) * 100;
+            setSliderValue(newValue); // Update React state for slider
+          }
+        }
+      };
+
+      // Set interval to update the slider every 100ms
+      const interval = setInterval(updateSlider, 100);
+
+      // Cleanup the interval on component unmount
+      return () => clearInterval(interval);
     };
 
-    // Add event listener for when model loads
+    // Add event listener for model load
     modelViewer.addEventListener('load', handleLoad);
 
     return () => {
       modelViewer.removeEventListener('load', handleLoad);
     };
-  }, []);
+  }, [isDragging]); // Add isDragging dependency to ensure proper updates
 
   const openFullscreen = () => {
     const modelViewer = modelViewerRef.current;
@@ -84,8 +105,26 @@ const A3d = () => {
 
     setCurrentSlide(slideIndex);
   };
-  
-  
+
+  // Handle the user dragging the slider
+  const handleSliderChange = (event) => {
+    const value = event.target.value;
+    setSliderValue(value); // Update the slider's state
+
+    const modelViewer = modelViewerRef.current;
+    const duration = modelViewer.duration;
+    modelViewer.currentTime = (value / 100) * duration; // Sync with model viewer's current time
+  };
+
+  // Start dragging
+  const handleSliderDragStart = () => {
+    setIsDragging(true);
+  };
+
+  // End dragging
+  const handleSliderDragEnd = () => {
+    setIsDragging(false);
+  };
 
   return (
     <main>
@@ -134,15 +173,19 @@ const A3d = () => {
 
             {/* Animation Toolbar */}
             {animationToolbarVisible && (
-              <div className="animation-Toolbar">
+                 <div className="animation-Toolbar">
                 <button className="A3d__btn play" onClick={() => modelViewerRef.current.play()}></button>
                 <button className="A3d__btn pause" onClick={() => modelViewerRef.current.pause()}></button>
                 <input
                   type="range"
                   min="0"
+                  max="100"
                   step="0.1"
+                  value={sliderValue} // Bind slider value to state
                   className="anim-Range"
-                  onChange={(e) => (modelViewerRef.current.currentTime = e.target.value)}
+                  onChange={handleSliderChange} // Handle user sliding
+                  onMouseDown={handleSliderDragStart} // Start dragging
+                  onMouseUp={handleSliderDragEnd} // End dragging
                 />
               </div>
             )}
