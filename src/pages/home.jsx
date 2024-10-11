@@ -1,11 +1,11 @@
 // Home.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Correct v6 imports
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import HeroSection from "../components/HeroSection";
 import Featurette from "../components/Featurette";
 import ContactForm from "../components/ContactForm";
-import "../styles/index.css"; // Import any global CSS styles
-import "../styles/index3d.css"; // Import
+import "../styles/index.css"; 
+import "../styles/index3d.css"; 
 
 const Home = () => {
   return (
