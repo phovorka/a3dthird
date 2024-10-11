@@ -1,5 +1,5 @@
 {
-  "name": "glitch-hello-react",
+  "name": "Assembly 3D ",
   "version": "0.0.5",
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
@@ -14,7 +14,8 @@
     "bootstrap": "^5.3.3",
     "react-router-dom": "^6.26.2",
     "@google/model-viewer": "^3.5.0",
-    "three": "^0.169.0"
+    "three": "^0.169.0",
+    "react-i18next": "^15.0.2"
   },
   "devDependencies": {
     "vite": "^4.5.5",
