@@ -1,6 +1,8 @@
 // components/Footer.js
 import React from "react";
 import { Link } from "react-router-dom";
+import LanguageSwitcher from './LanguageSwitcher';
+
 const Footer = () => {
   return (
     <footer className="w-100 py-4 flex-shrink-0" id="footer">
@@ -58,6 +60,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+       <LanguageSwitcher />
     </footer>
   );
 };

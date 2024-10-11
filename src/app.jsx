@@ -15,6 +15,9 @@ import Footer from "./components/Footer";
 import ModelViewer from "./components/ModelViewer";
 import Demo from "./pages/demo";
 
+import { useTranslation } from 'react-i18next';
+import './i18n'; // Načtěte konfiguraci pro i18next
+
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
