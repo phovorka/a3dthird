@@ -14,7 +14,7 @@ i18n
       caches: ['cookie'],
     },
     backend: {
-      loadPath: '/src/locales/{{lng}}/translation.json', // Cesta k překladovým souborům
+      loadPath: '/locales/{{lng}}/translation.json', // Cesta k překladovým souborům
     },
     react: {
       useSuspense: false
