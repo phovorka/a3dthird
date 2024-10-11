@@ -34,27 +34,19 @@ const Footer = () => {
           <div className="m-auto row gy-3 mb-3">
             <div className="col">
               <h5 className="text mb-3">Rychlá navigace</h5>
-  
-                <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                  <Link
-                    className="me-3 py-2"
-                    to="../../"
-                  >
-                    Hlavní strana
-                  </Link>
-         
-       <a className="py-2 text-dark text-decoration-none" href="/#demo">
-  Demo
-</a>
-          
-                  <Link
-                    className="py-2"
-                    to="/#contact"
-                  >
-                    Kontakt
-                  </Link>
-                </nav>
-              
+
+              <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <Link className="me-3 py-2" to="/">
+                  Hlavní strana
+                </Link>
+                  <Link className="me-3 py-2" to="/pages/demo#demo">
+                  Demo
+                </Link>
+
+                <Link className="py-2" to="/#contact">
+                  Kontakt
+                </Link>
+              </nav>
             </div>
           </div>
 
