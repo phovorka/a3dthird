@@ -15,8 +15,13 @@ import Footer from "./components/Footer";
 import ModelViewer from "./components/ModelViewer";
 import Demo from "./pages/demo";
 
+
+import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
-import './i18n'; // Načtení i18n konfigurace
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -35,6 +40,25 @@ const ScrollToHashElement = () => {
 
   return null;
 };
+
+
+i18n
+  .use(HttpApi)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    detection: {
+      order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+      caches: ['cookie'],
+    },
+    backend: {
+      loadPath: '/locales/{{lng}}/translation.json',
+    },
+    react: {
+      useSuspense: false,
+    },
+  });
 
 function App() {
   return (
