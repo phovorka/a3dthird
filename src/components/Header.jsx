@@ -18,9 +18,10 @@ const Header = () => {
             <Link className="me-3 py-2 text-dark text-decoration-none" to="#">
               Výhody
             </Link>
-            <Link className="me-3 py-2 text-dark text-decoration-none" to="/pages/demo">
-              Demo
-            </Link>
+       <a className="py-2 text-dark text-decoration-none" href="/pages/demo">
+  Demo 
+</a>
+           
 <a className="py-2 text-dark text-decoration-none" href="/#contact">
   Kontakt
 </a>

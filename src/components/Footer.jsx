@@ -42,15 +42,14 @@ const Footer = () => {
                   >
                     Hlavní strana
                   </Link>
-                  <Link
-                    className="me-3 py-2 "
-                    to="/pages/demo"
-                  >
-                    Demo
-                  </Link>
+         
+       <a className="py-2 text-dark text-decoration-none" href="/#demo">
+  Demo
+</a>
+          
                   <Link
                     className="py-2"
-                    to="../../#contact"
+                    to="/#contact"
                   >
                     Kontakt
                   </Link>

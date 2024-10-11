@@ -190,7 +190,7 @@ const A3d = () => {
 
   return (
     <main>
-      <div className="assembly-Instruction px-2 pb-5">
+      <div className="assembly-Instruction px-2 pb-5" id="demo">
         <div className="header">
           <img
             src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/ikea.svg?v=1665664365999"
