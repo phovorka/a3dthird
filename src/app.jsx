@@ -15,12 +15,7 @@ import Footer from "./components/Footer";
 import ModelViewer from "./components/ModelViewer";
 import Demo from "./pages/demo";
 
-
-import i18n from 'i18next';
-import { useTranslation } from 'react-i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend';
+import i18n from "./pages/i18n";
 
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -42,23 +37,7 @@ const ScrollToHashElement = () => {
 };
 
 
-i18n
-  .use(HttpApi)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    fallbackLng: 'en',
-    detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
-      caches: ['cookie'],
-    },
-    backend: {
-      loadPath: '/src/locales/{{lng}}/translation.json',
-    },
-    react: {
-      useSuspense: false,
-    },
-  });
+console.log(navigator.language); // detect language of your browser
 
 function App() {
   return (
