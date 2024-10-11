@@ -38,7 +38,7 @@ const Footer = () => {
                 <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                   <Link
                     className="me-3 py-2"
-                    to="/"
+                    to="../../"
                   >
                     Hlavní strana
                   </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     className="py-2"
-                    to="/contact"
+                    to="../../#contact"
                   >
                     Kontakt
                   </Link>

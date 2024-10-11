@@ -21,7 +21,7 @@ const Header = () => {
             <Link className="me-3 py-2 text-dark text-decoration-none" to="/pages/demo">
               Demo
             </Link>
-            <Link className="py-2 text-dark text-decoration-none" to="/contact">
+            <Link className="py-2 text-dark text-decoration-none" to="#contact">
               Kontakt
             </Link>
           </nav>
