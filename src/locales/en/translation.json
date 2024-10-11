@@ -1,5 +1,18 @@
 {
   "welcome_message": "Welcome to our website",
   "contact_us": "Contact Us",
-  "about_us": "About Us"
+  "about_us": "About Us",
+  
+    "contactForm": {
+    "title": "Leave us your contact",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "Email address",
+    "phonePlaceholder": "Phone number",
+    "messagePlaceholder": "Your message"
+  }
 }

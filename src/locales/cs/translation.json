@@ -1,5 +1,18 @@
 {
   "welcome_message": "Vítejte na našich stránkách",
   "contact_us": "Kontaktujte nás",
-  "about_us": "O nás"
+  "about_us": "O nás",
+  
+    "contactForm": {
+    "title": "Nechte nám na sebe kontakt",
+    "name": "Jméno",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Zpráva",
+    "submit": "Poslat",
+    "namePlaceholder": "Vaše celé jméno",
+    "emailPlaceholder": "Vaše emailová adresa",
+    "phonePlaceholder": "Vaše telefonní číslo",
+    "messagePlaceholder": "Vaše zpráva"
+  }
 }
