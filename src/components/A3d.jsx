@@ -190,7 +190,7 @@ const A3d = () => {
 
   return (
     <main>
-      <div className="assembly-Instruction pt-4">
+      <div className="assembly-Instruction px-2 pb-5">
         <div className="header">
           <img
             src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/ikea.svg?v=1665664365999"
@@ -203,7 +203,7 @@ const A3d = () => {
             </p>
           </h5>
         </div>
-        <div className="viewer" id="viewer">
+        <div className="viewer" >
           <model-viewer
             ref={modelViewerRef}
             ar
