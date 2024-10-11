@@ -7,13 +7,14 @@ import ContactForm from "../components/ContactForm";
 import "../styles/index.css"; 
 import "../styles/index3d.css"; 
 import { useTranslation } from 'react-i18next';
+
 const Home = () => {
   const { t } = useTranslation(); // T funkce slouží k překladu
 
   return (
     <section>
       <div className="Home container py-3">
-             <h1>{t('welcome_message')}</h1>
+     <h1>{t('welcome_message')}</h1>
       <p>{t('about_us')}</p>
         <HeroSection />
       </div>
