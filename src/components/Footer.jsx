@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <footer className="w-100 py-4 flex-shrink-0" id="footer">
       <div className="container py-4">
+            <LanguageSwitcher />
         <div className="m-auto" style={{ maxWidth: "600px" }}>
           {/* Logo Section */}
           <div className="m-auto text-center pb-4">
@@ -60,7 +61,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-       <LanguageSwitcher />
+   
     </footer>
   );
 };
