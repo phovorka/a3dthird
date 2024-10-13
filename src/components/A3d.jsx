@@ -63,7 +63,7 @@ const A3d = () => {
     
         {
       src: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5thAnim.glb?v=1670264284954",
-      cameraOrbit: "40deg 70deg 3m",
+      cameraOrbit: "113deg 75deg 3m",
       cameraTarget: "-6m 10m 2m",
       minOrbit: "auto auto 40m",
       minFov: "20deg",
