@@ -64,11 +64,11 @@ const A3d = () => {
         {
       src: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5thAnim.glb?v=1670264284954",
       cameraOrbit: "113deg 75deg 3m",
-      cameraTarget: "-6m 10m 2m",
-      minOrbit: "auto auto 40m",
+      cameraTarget: "-6m 5m 14m",
+      minOrbit: "auto auto 35m",
       minFov: "20deg",
-      description: "2) Přišroubuj přední čelo",
-      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+      description: "4) Vlož záchytná oka",
+      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5pic.png?v=1670265588553", // Background image URL for the second slide
           tools: [
         { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
         { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
@@ -76,46 +76,36 @@ const A3d = () => {
     },
     
     
-               class="slide-Picture"
-                onclick="switchSrc(this, 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5thAnim.glb?v=1670264284954',
-                         '113deg 75deg 3m','-6m 5m 14m','auto auto 35m','20deg')"
-                style="
-                  background-image: url('https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5pic.png?v=1670265588553');
-                "
-              >
-                <span class="arrow-Slide"></span>
-              </button>
-              <small
-                ><span class="slide-Describe">4) Vlož záchytná oka</span></small
-              >
+ 
     
         {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
-      cameraOrbit: "40deg 70deg 3m",
-      cameraTarget: "-6m 10m 2m",
-      minOrbit: "auto auto 40m",
+      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/5th.glb?v=1725622326906",
+      cameraOrbit: "108deg 65deg 3m",
+      cameraTarget: "3m 7m 14m",
+      minOrbit: "auto auto 22m",
       minFov: "20deg",
-      description: "2) Přišroubuj přední čelo",
-      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+      description: "5) Připevní podložku",
+      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
           tools: [
         { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
         { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
       ],
     },
+    
         {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
-      cameraOrbit: "40deg 70deg 3m",
-      cameraTarget: "-6m 10m 2m",
-      minOrbit: "auto auto 40m",
+      src: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/BEDBlenderNoAnim.glb?v=1664801803206",
+      cameraOrbit: "54.31deg 66.45deg auto",
+      cameraTarget: "",
+      minOrbit: "auto auto auto",
       minFov: "20deg",
-      description: "2) Přišroubuj přední čelo",
-      backgroundImage: "https://example.com/path/to/slide2-image.png", // Background image URL for the second slide
+      description: "Vše",
+      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
           tools: [
         { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
         { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
       ],
     },
-    // Add more slides as needed...
+  
   ];
 
   useEffect(() => {
