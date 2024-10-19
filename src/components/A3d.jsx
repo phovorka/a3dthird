@@ -214,7 +214,7 @@ const A3d = () => {
           />
           <h5>
             <p className="ps-2 btn">
-              <b>IKEA</b> GULLIVER Cot
+              <b>{t('instruction.ikea')}</b> {t('instruction.gulliverCot')}
             </p>
           </h5>
         </div>
@@ -244,7 +244,7 @@ const A3d = () => {
        <div id="usedTools" className="btn3 A3d__btn" onClick={toggleTools}></div>
             {toolsVisible && (
               <div id="tools">
-                <p>Použité díly</p>
+                <p>{t('instruction.usedParts')}</p>
                 {slides[currentSlide].tools.map((tool, index) => (
                   <div key={index} className="tool-item">
                     <img src={tool.imgSource} className="img-tools" alt={tool.label} />
