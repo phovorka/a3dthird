@@ -14,5 +14,15 @@
     "emailPlaceholder": "Vaše emailová adresa",
     "phonePlaceholder": "Vaše telefonní číslo",
     "messagePlaceholder": "Vaše zpráva"
+  },
+   "footer": {
+    "aboutUs": "O nás", 
+    "aboutUsText1": "Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a        manuálů, tak jak jej známe dnes. 3D grafikou a webovými technologiemi jsme se zabývali již jako zaměstnanci nadnárodních firem a dnes se snažíme tuto technologickou novinku přenést i do českého prostředí.",
+    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systémpro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženkunašich klientů.",
+    "quickNav": "Rychlá navigace",
+    "home": "Hlavní strana",
+    "demo": "Demo",
+    "contact": "Kontakt",
+    "createdWith": "Vytvořeno s ❤️ v Praze"
   }
 }
