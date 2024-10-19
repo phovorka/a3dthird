@@ -1,7 +1,4 @@
 {
-  "welcome_message": "Vítejte na našich stránkách",
-  "contact_us": "Kontaktujte nás",
-  "about_us": "O nás",
   
     "contactForm": {
     "title": "Nechte nám na sebe kontakt",
@@ -35,5 +32,16 @@
     "home": "Hlavní strana",
     "demo": "Demo",
     "contact": "Kontakt"
+  },
+
+   "featurette1": {
+    "heading": "Zaujme na první pohled.",
+    "subheading": "Volností 3D.",
+    "description": "Uživatelé mohou model zvětšit, rotovat, nebo posouvat tak jak potřebují. Díky takovéto volnosti se rapidně zkrátí doba nastudování jednotlivých operací."
+  },
+  "featurette2": {
+    "heading": "Poznejte detaily.",
+    "subheading": "Interaktivní vizualizace.",
+    "description": "Tento model vám umožní prozkoumat každý aspekt zblízka a pochopit složitost konstrukce."
   }
 }
