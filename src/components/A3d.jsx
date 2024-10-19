@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import style from "../styles/A3d.css"; // Import only for this component
 import "@google/model-viewer"; // Import the model-viewer library
+import { useTranslation } from 'react-i18next'; // Importing useTranslation for translations
 
 const A3d = () => {
   const modelViewerRef = useRef(null);
@@ -10,6 +11,7 @@ const A3d = () => {
   const [animationToolbarVisible, setAnimationToolbarVisible] = useState(false);
   const [sliderValue, setSliderValue] = useState(0); // Slider value as a percentage
   const [isDragging, setIsDragging] = useState(false); // Track if the slider is being dragged
+  const { t } = useTranslation(); // T function for translations
 
   const slides = [
     {
@@ -18,7 +20,7 @@ const A3d = () => {
       cameraTarget: "2m 12m 2m",
       minOrbit: "auto auto 35m",
       minFov: "20deg",
-      description: "1) Vlož dřevěné kolíky",
+      description: t('instruction.slides.0'), // Using translation keys
       backgroundImage:
         "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/1pic.png?v=1670265590781", // Background image URL for the first slide
      tools: [
@@ -32,7 +34,7 @@ const A3d = () => {
       cameraTarget: "-6m 10m 2m",
       minOrbit: "auto auto 40m",
       minFov: "20deg",
-      description: "2) Přišroubuj přední čelo",
+      description: t('instruction.slides.1'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/2pic.png?v=1670265590116", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
@@ -46,7 +48,7 @@ const A3d = () => {
       cameraTarget: "-0,04m 9,59m -2,64",
       minOrbit: "auto auto 40m",
       minFov: "20deg",
-      description: "3) Přišroubuj zadní čelo",
+      description: t('instruction.slides.2'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/3pic.png?v=1670265587955", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
@@ -60,7 +62,7 @@ const A3d = () => {
       cameraTarget: "-6m 5m 14m",
       minOrbit: "auto auto 35m",
       minFov: "20deg",
-      description: "4) Vlož záchytná oka",
+      description: t('instruction.slides.3'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5pic.png?v=1670265588553", // Background image URL for the second slide
           tools: [
          { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
@@ -76,7 +78,7 @@ const A3d = () => {
       cameraTarget: "3m 7m 14m",
       minOrbit: "auto auto 22m",
       minFov: "20deg",
-      description: "5) Připevní podložku",
+      description: t('instruction.slides.4'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
@@ -93,7 +95,7 @@ const A3d = () => {
       cameraTarget: "",
       minOrbit: "auto auto auto",
       minFov: "20deg",
-      description: "Vše",
+      description: t('instruction.slides.5'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
      tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },

@@ -43,5 +43,18 @@
     "heading": "Poznejte detaily.",
     "subheading": "Interaktivní vizualizace.",
     "description": "Tento model vám umožní prozkoumat každý aspekt zblízka a pochopit složitost konstrukce."
-  }
+  },
+      "instruction": {
+      "usedParts": "Použité díly",
+      "ikea": "IKEA",
+      "gulliverCot": "GULLIVER Postýlka",
+      "slides": [
+        "1) Vlož dřevěné kolíky",
+        "2) Přišroubuj přední čelo",
+        "3) Přišroubuj zadní čelo",
+        "4) Vlož záchytná oka",
+        "5) Připevní podložku",
+        "Vše"
+      ]
+    }
 }
