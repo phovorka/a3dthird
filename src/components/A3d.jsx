@@ -22,15 +22,8 @@ const A3d = () => {
       backgroundImage:
         "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/1pic.png?v=1670265590781", // Background image URL for the first slide
      tools: [
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: 'Hammer' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%206.svg?v=1670781455759', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%209.svg?v=1670953165258', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: 'Screwdriver' },
-        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%205.svg?v=1670953163724', label: 'Screwdriver' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: 'Screwdriver' },
+
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: '101351' },
       ],
     },
     {
@@ -42,8 +35,8 @@ const A3d = () => {
       description: "2) Přišroubuj přední čelo",
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/2pic.png?v=1670265590116", // Background image URL for the second slide
           tools: [
-        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
-        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
       ],
     },
     
@@ -56,8 +49,8 @@ const A3d = () => {
       description: "3) Přišroubuj zadní čelo",
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/3pic.png?v=1670265587955", // Background image URL for the second slide
           tools: [
-        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
-        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
       ],
     },
     
@@ -70,8 +63,7 @@ const A3d = () => {
       description: "4) Vlož záchytná oka",
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5pic.png?v=1670265588553", // Background image URL for the second slide
           tools: [
-        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
-        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+         { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
       ],
     },
     
@@ -87,8 +79,11 @@ const A3d = () => {
       description: "5) Připevní podložku",
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
           tools: [
-        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
-        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: '100829' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%206.svg?v=1670781455759', label: '100716' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%209.svg?v=1670953165258', label: '108184' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%205.svg?v=1670953163724', label: '100001' },
       ],
     },
     
@@ -100,9 +95,16 @@ const A3d = () => {
       minFov: "20deg",
       description: "Vše",
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
-          tools: [
-        { imgSource: 'https://example.com/tool3.png', label: 'Drill' },
-        { imgSource: 'https://example.com/tool4.png', label: 'Wrench' },
+     tools: [
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: '100829' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%206.svg?v=1670781455759', label: '100716' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%209.svg?v=1670953165258', label: '108184' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%205.svg?v=1670953163724', label: '100001' },
+       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: '101351' },
       ],
     },
   
