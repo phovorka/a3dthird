@@ -265,48 +265,6 @@ width:100%;
 }
 
 
-.animation-Toolbar {
-  padding: 6px;
-  box-sizing: border-box;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.anim-Range {
-  cursor: pointer;
-  margin-left: 10px;
-  display: inline-block;
-  vertical-align: middle
-}
-
-.play {
-  position: relative;
-  cursor: pointer;
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/play_arrow.svg?v=1668438444401");
-  background-size: 26px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 26px;
-  height: 26px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
-}
-
-.pause {
-  position: relative;
-  cursor: pointer;
-  background-image: url("https://cdn.glitch.global/1540ff5d-0f8c-4dfa-b217-fdbbdafefb7d/pause%20(1).svg?v=1670758874528");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 26px;
-  height: 26px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
-}
 
 
 
