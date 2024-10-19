@@ -30,5 +30,10 @@
     "subtitle": "Řekni sbohem tištěným návodům. Využij volnosti 3D. Bez otravné instalace.",
     "demoButton": "Ukázka",
     "advantagesButton": "Výhody"
+  },
+    "header": {
+    "home": "Hlavní strana",
+    "demo": "Demo",
+    "contact": "Kontakt"
   }
 }
