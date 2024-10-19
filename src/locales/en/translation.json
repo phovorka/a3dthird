@@ -1,18 +1,58 @@
 {
-  "welcome_message": "Welcome to our website",
-  "contact_us": "Contact Us",
-  "about_us": "About Us",
-  
-    "contactForm": {
+  "contactForm": {
     "title": "Leave us your contact",
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
     "message": "Message",
     "submit": "Send",
-    "namePlaceholder": "Full name",
-    "emailPlaceholder": "Email address",
-    "phonePlaceholder": "Phone number",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "Your email address",
+    "phonePlaceholder": "Your phone number",
     "messagePlaceholder": "Your message"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutUsText1": "We are a small team of creatives who decided to change the world of instructions and manuals as we know it today. We have worked with 3D graphics and web technologies as employees of multinational companies, and now we strive to bring this technological innovation into the Czech environment.",
+    "aboutUsText2": "Thanks to our years of experience, we have created a very effective system for the creation and presentation of 3D instructions, which we offer to our customers at a price that often corresponds to just the printing costs of manuals on paper. This way, we not only save the environment but also the wallets of our clients.",
+    "quickNav": "Quick Navigation",
+    "home": "Home Page",
+    "demo": "Demo",
+    "contact": "Contact",
+    "createdWith": "Created with ❤️ in Prague"
+  },
+  "heroSection": {
+    "title": "3D Animated Assembly Instructions",
+    "subtitle": "Say goodbye to printed manuals. Embrace the freedom of 3D. No annoying installation.",
+    "demoButton": "Sample",
+    "advantagesButton": "Advantages"
+  },
+  "header": {
+    "home": "Home Page",
+    "demo": "Demo",
+    "contact": "Contact"
+  },
+  "featurette1": {
+    "heading": "Captivating at first glance.",
+    "subheading": "The freedom of 3D.",
+    "description": "Users can enlarge, rotate, or move the model as needed. This freedom significantly reduces the time required to learn individual operations."
+  },
+  "featurette2": {
+    "heading": "Discover the details.",
+    "subheading": "Interactive visualization.",
+    "description": "This model allows you to explore every aspect up close and understand the complexity of the construction."
+  },
+  "instruction": {
+    "usedParts": "Used Parts",
+    "ikea": "IKEA",
+    "gulliverCot": "GULLIVER Crib",
+    "slides": [
+      "1) Insert wooden pegs",
+      "2) Screw on the front panel",
+      "3) Screw on the back panel",
+      "4) Insert the retaining eyes",
+      "5) Attach the pad",
+      "All"
+    ]
   }
 }

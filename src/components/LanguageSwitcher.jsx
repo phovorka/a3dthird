@@ -4,10 +4,20 @@ import { useTranslation } from 'react-i18next';
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  
+  // Track the current language
+  const currentLanguage = i18n.language || 'cs'; // Default to Czech if no language is set
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setIsOpen(false); // Close dropdown after selection
+  };
+
+  // Set flag URL based on current language
+  const getFlagUrl = (lng) => {
+    return lng === 'cs'
+      ? 'https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' // Czech flag
+      : 'https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877'; // English flag
   };
 
   return (
@@ -17,13 +27,12 @@ const LanguageSwitcher = () => {
         className="flex items-center justify-between w-full p-2 text-sm border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-300"
       >
         <img 
-          src="https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877" 
-          alt="Czech flag" 
-          className="w-4 h-4 mr-2" // Adjust size as needed
+          src={getFlagUrl(currentLanguage)} 
+          alt={`${currentLanguage === 'cs' ? 'Czech' : 'English'} flag`} 
+          style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+          className="mr-2" // Add margin to the right
         />
-        {/* Show the current language based on state */}
-        <span className="ml-2">Language</span> {/* Placeholder text */}
-        <span className="ml-2">&#9662;</span> {/* Dropdown arrow */}
+
       </button>
 
       {isOpen && (
@@ -33,9 +42,10 @@ const LanguageSwitcher = () => {
             className="flex items-center p-2 cursor-pointer hover:bg-gray-100"
           >
             <img 
-              src="https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877" 
+              src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' 
               alt="Czech flag" 
-              className="w-4 h-4 mr-2" // Adjusted size for flags
+              style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+              className="mr-2" // Add margin to the right
             />
           </div>
           <div 
@@ -43,9 +53,10 @@ const LanguageSwitcher = () => {
             className="flex items-center p-2 cursor-pointer hover:bg-gray-100"
           >
             <img 
-              src="https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355086595" 
+              src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877' 
               alt="English flag" 
-              className="w-4 h-4 mr-2" // Adjusted size for flags
+              style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+              className="mr-2" // Add margin to the right
             />
           </div>
         </div>
