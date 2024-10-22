@@ -197,7 +197,7 @@ width:100%;
    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.exit-Fullscreen {
+.exitFullscreen {
   position: absolute;
   background-color: white;
   background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/close_fullscreen.svg?v=1668446190770");
