@@ -21,10 +21,10 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-right">
       <button 
         onClick={() => setIsOpen(!isOpen)} 
-        className="flex items-center justify-between w-full p-2 text-sm border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-300"
+        className="flex items-center justify-between  p-2 text-sm border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-300"
       >
         <img 
           src={getFlagUrl(currentLanguage)} 
@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+        <div className="absolute right-0 z-10  mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
           <div 
             onClick={() => changeLanguage('cs')} 
             className="flex items-center p-2 cursor-pointer hover:bg-gray-100"
@@ -45,7 +45,7 @@ const LanguageSwitcher = () => {
               src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' 
               alt="Czech flag" 
               style={{ width: '18px', height: '18px' }} // Set image size to 36x36 pixels
-              className="mr-2" // Add margin to the right
+              className="m-2" // Add margin to the right
             />
           </div>
           <div 
@@ -56,7 +56,7 @@ const LanguageSwitcher = () => {
               src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877' 
               alt="English flag" 
               style={{ width: '18px', height: '18px' }} // Set image size to 36x36 pixels
-              className="mr-2" // Add margin to the right
+              className="m-2" // Add margin to the right
             />
           </div>
         </div>
