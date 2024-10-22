@@ -138,7 +138,7 @@ const A3d = () => {
 
       };
 
-      // Set interval to update the slider every 100ms
+    
       const interval =   requestAnimationFrame(updateSlider); // Call updateSlider again in the next frame
 
 
