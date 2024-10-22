@@ -187,7 +187,7 @@ width:100%;
   background-position: center;
   cursor: pointer;
   right: 11px;
-  top: 70px;
+  top: 20px;
   z-index: 100;
   width: 36px;
   height: 36px;
@@ -206,7 +206,7 @@ width:100%;
   background-position: center;
   cursor: pointer;
   right: 10px;
-  top: 70px;
+  top: 20px;
   z-index: 100;
   width: 36px;
   height: 36px;
@@ -296,15 +296,12 @@ select {
   background: black; 
 }
 
-
-
-
 #usedTools {
   background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/screw-icon.svg?v=1671275040628");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 120px;
+  top: 70px;
   right: 10px;
   z-index: 12;
   cursor: pointer;
@@ -329,10 +326,11 @@ select {
   border-radius: 16px;
 }
 
-#tools p {
-  padding: 2px;
-  position: relative;
-  left: 16px;
+.usedName
+ {
+  width: 96px;
+  display: block; /* Display as block for consistent layout */
+  margin: 0 auto; /* Center the image horizontally in its container */
 }
 
 /* tools*/
@@ -349,4 +347,8 @@ select {
   flex-direction: column;
   align-items: center; /* Centers the image and text */
   margin: 8px; /* Add some spacing between tool items */
+}
+
+.tool-item p {
+  font-size: 10px; /* Set a small font size for miniature text */
 }

@@ -244,9 +244,9 @@ const A3d = () => {
        <div id="usedTools" className="btn3 A3d__btn" onClick={toggleTools}></div>
           
             {toolsVisible && (
-              <div id="tools" class="flex flex-row gap-4">
-                 <p>{t('instruction.usedParts')}</p>
-                <div>
+              <div  >
+                 <p class="usedName">{t('instruction.usedParts')}</p>
+                <div id="tools" class="flex flex-row gap-4">
                 {slides[currentSlide].tools.map((tool, index) => (
                   <div key={index} className="tool-item flex flex-col items-center">
                     <img src={tool.imgSource} className="img-tools" alt={tool.label} />
