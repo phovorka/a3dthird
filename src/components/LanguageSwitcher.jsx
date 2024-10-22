@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="relative inline-block text-right">
+    <div className="relative inline-block text-left">
       <button 
         onClick={() => setIsOpen(!isOpen)} 
         className="flex items-center justify-between  p-2 text-sm border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-300"
@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 z-10  mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+        <div className="fixed right-4  z-10  mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
           <div 
             onClick={() => changeLanguage('cs')} 
             className="flex items-center p-2 cursor-pointer hover:bg-gray-100"
