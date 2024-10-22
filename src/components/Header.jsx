@@ -9,10 +9,6 @@ const Header = () => {
   return (
     <header>
       <div className="container ">
-        <div className="position-absolute top-0 end-0 me-3 mt-2">
-                  <LanguageSwitcher />
-
-        </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-2 border-bottom">
           <Link
             to="/"
@@ -24,6 +20,7 @@ const Header = () => {
               alt="Assembly 3D"
             />
           </Link>
+
           <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
             <Link className="me-3 py-2 text-dark text-decoration-none" to="/">
               {t("header.home")} {/* Translated home link */}
@@ -40,6 +37,10 @@ const Header = () => {
             >
               {t("header.contact")} {/* Translated contact link */}
             </Link>
+
+            <div className="position-relative  ms-4 ">
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       </div>

@@ -32,8 +32,9 @@ const Footer = () => {
                 <Link className="me-3 py-2" to="/">{t('footer.home')}</Link>
                 <Link className="me-3 py-2" to="/pages/demo#demo">{t('footer.demo')}</Link>
                 <Link className="py-2" to="/#contact">{t('footer.contact')}</Link>
-                <LanguageSwitcher className="position-top-right " />
-              </nav>
+          <div className="position-relative  ms-4 ">
+              <LanguageSwitcher />
+            </div>              </nav>
              
             </div>
           </div>
