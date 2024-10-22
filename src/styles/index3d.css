@@ -108,3 +108,20 @@ cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
+.text-primary-500 {
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Change colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Start at left */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to right */
+  }
+  100% {
+    background-position: 0% 50%; /* Return to start */
+  }
+}
