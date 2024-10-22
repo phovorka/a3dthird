@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="small m-auto text-center text-muted mb-0">
+          <p className="small m-auto text-center text-muted mt-4 pt-4">
             {t('footer.createdWith')} <a className="text-primary" href="#">ASSEMBLY3D.eu</a>
           </p>
         </div>
