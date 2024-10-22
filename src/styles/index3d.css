@@ -109,16 +109,7 @@ cursor: pointer;
 }
 
 .position-top-right {
-  position: absolute;  /* Positioning relative to the nearest positioned ancestor */
-  top: 0;              /* Align to the top */
-  right: 0;            /* Align to the right */
-  margin: 10px;       /* Optional: Add some space from the edges */
-}
-
-.language-switcher {
-  position: relative; /* allows positioning relative to header */
-}
-
-.language-switcher .dropdown {
-  margin-left: auto; /* aligns the dropdown to the right */
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
 }
