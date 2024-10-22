@@ -56,5 +56,13 @@
         "5) Připevní podložku",
         "Vše"
       ]
-    }
+    },
+   "sectionPlus": {
+    "coreTech": "Naším jádrem je bezpečná technologie od firmy Google",
+    "coreDescription": "Naše řešení 3D grafiky na webu stojí na technologii model-vieweru od Googlu.",
+    "multiPlatform": "100% multi-platformní",
+    "multiPlatformDescription": "Není potřeba žádná instalace. Návod spustíte na mobilu, tabletu i počítači. To vše pod jedním linkem.",
+    "arVrSupport": "Podpora AR,VR",
+    "arVrDescription": "Modely jsou optimalizované pro podporu AR,VR"
+  }
 }

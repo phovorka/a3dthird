@@ -54,5 +54,13 @@
       "5) Attach the pad",
       "All"
     ]
+  },
+    "sectionPlus": {
+    "coreTech": "Our core is safe technology from Google",
+    "coreDescription": "Our 3D graphics solution on the web is based on Google's model-viewer technology.",
+    "multiPlatform": "100% multi-platform",
+    "multiPlatformDescription": "No installation required. You can run the guide on mobile, tablet, and computer. All under one link.",
+    "arVrSupport": "AR/VR Support",
+    "arVrDescription": "Models are optimized for AR/VR support."
   }
 }

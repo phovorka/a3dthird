@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
 import Featurette from "../components/Featurette";
 import ContactForm from "../components/ContactForm";
+import SectionPlus from '../components/sectionPlus'; // Adjust the path to your component
 import "../styles/index.css"; 
 import "../styles/index3d.css"; 
 import { useTranslation } from 'react-i18next';
@@ -31,6 +32,7 @@ const Home = () => {
         modelSrc="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/profil.glb?v=1722942266930"
         modelId="bon2"
       />
+      <SectionPlus />
 
       <ContactForm />
     </section>
