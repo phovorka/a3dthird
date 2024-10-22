@@ -45,7 +45,7 @@ function App() {
   return (
     <Router>
       <main>
-        <div class="container py-3">
+        <div className="container py-3">
            
           <Header />
           {/* This handles scrolling to #hash elements */}
