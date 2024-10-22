@@ -6,7 +6,8 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build:css": "tailwindcss build src/styles/styles.css -o src/styles/index.css"
   },
   "dependencies": {
     "react": "^18.3.1",

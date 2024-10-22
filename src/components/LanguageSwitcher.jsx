@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed right-4  z-10  mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+        <div className="z-10  mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
           <div 
             onClick={() => changeLanguage('cs')} 
             className="flex items-center p-2 cursor-pointer hover:bg-gray-100"
