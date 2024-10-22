@@ -29,7 +29,7 @@ const LanguageSwitcher = () => {
         <img 
           src={getFlagUrl(currentLanguage)} 
           alt={`${currentLanguage === 'cs' ? 'Czech' : 'English'} flag`} 
-          style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+          style={{ width: '18px', height: '18px' }} // Set image size to 36x36 pixels
           className="mr-2" // Add margin to the right
         />
 
@@ -44,7 +44,7 @@ const LanguageSwitcher = () => {
             <img 
               src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' 
               alt="Czech flag" 
-              style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+              style={{ width: '18px', height: '18px' }} // Set image size to 36x36 pixels
               className="mr-2" // Add margin to the right
             />
           </div>
@@ -55,7 +55,7 @@ const LanguageSwitcher = () => {
             <img 
               src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877' 
               alt="English flag" 
-              style={{ width: '36px', height: '36px' }} // Set image size to 36x36 pixels
+              style={{ width: '18px', height: '18px' }} // Set image size to 36x36 pixels
               className="mr-2" // Add margin to the right
             />
           </div>

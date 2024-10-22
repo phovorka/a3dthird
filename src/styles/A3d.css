@@ -335,10 +335,12 @@ select {
 
 /* tools*/
 .img-tools {
-  width: 96px;
-  height: 150px;
-  display: block; /* Display as block for consistent layout */
-  margin: 0 auto; /* Center the image horizontally in its container */
+  width: 100%;               /* Set width to 100% to make it responsive */
+  max-width: 96px;          /* Maintain the maximum width */
+  height: auto;             /* Set height to auto to maintain aspect ratio */
+  display: block;           /* Display as block for consistent layout */
+  margin: 0 auto;           /* Center the image horizontally in its container */
+  transition: transform 0.2s; /* Optional: Add a transition for hover effects */
 }
 
 /* tools*/

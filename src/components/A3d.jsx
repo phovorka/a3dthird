@@ -249,8 +249,9 @@ const A3d = () => {
                 <div id="tools" class="flex flex-row gap-4">
                 {slides[currentSlide].tools.map((tool, index) => (
                   <div key={index} className="tool-item flex flex-col items-center">
-                    <img src={tool.imgSource} className="img-tools" alt={tool.label} />
                     <p class="text-xs">{tool.label}</p>
+                      <img src={tool.imgSource} className="img-tools" alt={tool.label} />
+                   
                   </div>
                 ))}
                   </div>
