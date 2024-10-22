@@ -15,6 +15,8 @@ import Footer from "./components/Footer";
 import ModelViewer from "./components/ModelViewer";
 import Demo from "./pages/demo";
 
+
+
 import i18n from "./i18n";
 
 import "@google/model-viewer"; // Import the model-viewer library
@@ -44,6 +46,7 @@ function App() {
     <Router>
       <main>
         <div class="container py-3">
+           
           <Header />
           {/* This handles scrolling to #hash elements */}
           <ScrollToHashElement />

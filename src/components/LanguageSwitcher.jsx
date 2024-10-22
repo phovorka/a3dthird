@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown ">
       <button 
         className="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" 
         type="button" 
