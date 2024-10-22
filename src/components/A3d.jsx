@@ -236,13 +236,19 @@ const A3d = () => {
             min-camera-orbit={slides[0].minOrbit}
             camera-target={slides[0].cameraTarget}
           >
-  {/* Fullscreen Button */}
-  <button 
-    className={isFullScreen ? "exitFullscreen" : "fullScreen"} 
-    onClick={isFullScreen ? exitFullscreen : openFullscreen}
-  >
-   
-  </button>
+ {/* Fullscreen Button */}
+  {!isFullScreen ? (
+    <button 
+      className="fullScreen" 
+      onClick={openFullscreen}
+    ></button>
+  ) : (
+    <button 
+      className="exitFullscreen" 
+      onClick={exitFullscreen}
+    ></button>
+  )}
+
        <div id="usedTools" className="btn3 A3d__btn" onClick={toggleTools}></div>
           
             {toolsVisible && (
