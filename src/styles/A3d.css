@@ -297,12 +297,7 @@ select {
 }
 
 
-/* tools*/
-.img-tools {
-  width: 96px;
-  height: 150px;
-  display: inline;
-}
+
 
 #usedTools {
   background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/screw-icon.svg?v=1671275040628");
@@ -322,12 +317,13 @@ select {
 }
 
 #tools {
-  display: block;
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-wrap: wrap; /* Allows wrapping if the items overflow */
+  justify-content: start; /* Align items to the start (left) */
   background-color: rgba(255, 255, 255, 0.9);
   max-width: 580px;
   max-height: 390px;
-  display: block;
-  overflow-x: hidden;
+  overflow-x: auto; /* Changed to auto for horizontal scrolling if needed */
   margin: 8px;
   position: relative;
   border-radius: 16px;
@@ -339,3 +335,18 @@ select {
   left: 16px;
 }
 
+/* tools*/
+.img-tools {
+  width: 96px;
+  height: 150px;
+  display: block; /* Display as block for consistent layout */
+  margin: 0 auto; /* Center the image horizontally in its container */
+}
+
+/* tools*/
+.tool-item {
+  display: flex; /* Use flex to align items vertically inside each tool-item */
+  flex-direction: column;
+  align-items: center; /* Centers the image and text */
+  margin: 8px; /* Add some spacing between tool items */
+}
