@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
+
+
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const Header = () => {
@@ -10,8 +12,8 @@ const Header = () => {
   return (
     <header>
       
-      <div className="container">
-         <LanguageSwitcher  className="ms-auto" />
+      <div className="container position-relative">
+         <LanguageSwitcher  className="position-absolute top-0 end-0" />
         <div className="d-flex flex-column flex-md-row align-items-center mb-2 border-bottom">
           <Link to="/" className="d-flex align-items-center text-dark text-decoration-none">
             <img
