@@ -108,20 +108,22 @@ cursor: pointer;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
-.text-primary-500 {
-  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Change colors as needed */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes gradientAnimation {
+/* Keyframe animation for rotating gradient */
+@keyframes rotateGradient {
   0% {
-    background-position: 0% 50%; /* Start at left */
-  }
-  50% {
-    background-position: 100% 50%; /* Move to right */
+    background-position: 0% 0%; /* Start position */
   }
   100% {
-    background-position: 0% 50%; /* Return to start */
+    background-position: 100% 100%; /* End position */
   }
+}
+
+/* Radial gradient text with rotation */
+.text-primary-500 {
+    background: radial-gradient(circle, #0d6efd, #ffffff, #0d6efd);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rotateGradient 2s linear infinite;
+    background-repeat: no-repeat;
 }
