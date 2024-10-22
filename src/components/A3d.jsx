@@ -134,10 +134,13 @@ const A3d = () => {
             setSliderValue(newValue); // Update React state for slider
           }
         }
+          requestAnimationFrame(updateSlider); // Call updateSlider again in the next frame
+
       };
 
       // Set interval to update the slider every 100ms
-      const interval = setInterval(updateSlider, 100);
+      const interval =   requestAnimationFrame(updateSlider); // Call updateSlider again in the next frame
+
 
       // Cleanup the interval on component unmount
       return () => clearInterval(interval);

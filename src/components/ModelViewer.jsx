@@ -52,6 +52,8 @@ const ModelViewer = ({ src }) => {
         const newValue = (currentTime / duration) * 100;
         setSliderValue(newValue); // Update the React state for the slider
       }
+        requestAnimationFrame(updateSlider); // Call updateSlider again in the next frame
+
     };
 
     // Sync slider value with model-viewer's currentTime
@@ -62,7 +64,7 @@ const ModelViewer = ({ src }) => {
     });
 
     // Set an interval to update the slider every 100ms
-    const interval = setInterval(updateSlider, 100);
+    const interval = requestAnimationFrame(updateSlider);
 
     // Handle the cleanup of the interval on component unmount
     return () => {
