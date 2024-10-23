@@ -265,20 +265,12 @@ cursor: pointer;
 
 
 /*
-div {
-  border: 1px dashed red;
-}
+inserted from A3d
 */
 
 .assembly-Instruction {
   font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
   color: #244376;
-}
-
-
-/* This keeps child nodes hidden while the element loads */
-:not(:defined) > * {
-  display: none;
 }
 
 

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef,useMemo } from "react";
-import style from "../styles/A3d.css"; // Import only for this component
 import "@google/model-viewer"; // Import the model-viewer library
 import { useTranslation } from 'react-i18next'; // Importing useTranslation for translations
 
