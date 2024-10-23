@@ -83,6 +83,7 @@ const ModelViewer = ({ src }) => {
 
   return (
     <model-viewer
+      lazy-load
       ref={modelViewerRef}
       src={src}
       shadow-intensity="1"

@@ -223,6 +223,7 @@ const A3d = () => {
         </div>
         <div className="viewer" >
           <model-viewer
+            lazy-load
             ref={modelViewerRef}
             ar
             camera-controls
