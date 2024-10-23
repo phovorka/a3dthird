@@ -251,11 +251,11 @@ const A3d = () => {
           
             {toolsVisible && (
               <div  >
-                 <p class="usedName">{t('instruction.usedParts')}</p>
-                <div id="tools" class="d-flex flex-row gap-4">
+                 <p className="usedName">{t('instruction.usedParts')}</p>
+                <div id="tools" className="d-flex flex-row gap-4">
                 {slides[currentSlide].tools.map((tool, index) => (
                   <div key={index} className="tool-item d-flex flex-column align-items-center">
-                    <p class="text-muted small">{tool.label}</p>
+                    <p className="text-muted small">{tool.label}</p>
                       <img src={tool.imgSource} className="img-tools" alt={tool.label} />
                    
                   </div>
