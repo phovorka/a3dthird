@@ -9,6 +9,7 @@ i18n
   .use(HttpApi)
   .use(LanguageDetector)
   .use(initReactI18next)
+
   .init({
     lng: "cs", // Default language
    supportedLngs: ['en', 'cs'], 
@@ -18,7 +19,7 @@ i18n
       caches: ['cookie'],
     },
     backend: {
-      loadPath: '/src/locales/{{lng}}/translation.json',
+      loadPath: '/public/locales/{{lng}}/translation.json',
     },
     react: {
       useSuspense: false,
