@@ -14,8 +14,8 @@
   },
    "footer": {
     "aboutUs": "O nás", 
-    "aboutUsText1": "Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a        manuálů, tak jak jej známe dnes. 3D grafikou a webovými technologiemi jsme se zabývali již jako zaměstnanci nadnárodních firem a dnes se snažíme tuto technologickou novinku přenést i do českého prostředí.",
-    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systémpro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženkunašich klientů.",
+    "aboutUsText1": "Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a manuálů, tak jak jej známe dnes. 3D grafikou a webovými technologiemi jsme se zabývali již jako zaměstnanci nadnárodních firem a dnes se snažíme tuto technologickou novinku přenést i do českého prostředí.",
+    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systém pro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženkunašich klientů.",
     "quickNav": "Rychlá navigace",
     "home": "Hlavní strana",
     "demo": "Demo",
@@ -39,9 +39,9 @@
     "description": "Uživatelé mohou model zvětšit, rotovat, nebo posouvat tak jak potřebují. Díky takovéto volnosti se rapidně zkrátí doba nastudování jednotlivých operací."
   },
   "featurette2": {
-    "heading": "Poznejte detaily.",
+    "heading": "Poznejte detaily ve 3D.",
     "subheading": "Interaktivní vizualizace.",
-    "description": "Tento model vám umožní prozkoumat každý aspekt zblízka a pochopit složitost konstrukce."
+    "description": "Assembly 3D vám umožní prozkoumat každý aspekt zblízka a pochopit složitost konstrukce."
   },
       "instruction": {
       "usedParts": "Použité díly",
@@ -58,9 +58,9 @@
     },
    "sectionPlus": {
     "coreTech": "Naším jádrem je bezpečná technologie od firmy Google",
-    "coreDescription": "Naše řešení 3D grafiky na webu stojí na technologii model-vieweru od Googlu.",
+    "coreDescription": "Naše řešení 3D grafiky na webu stojí na technologii model-vieweru od firmy Google.",
     "multiPlatform": "100% multi-platformní",
-    "multiPlatformDescription": "Není potřeba žádná instalace. Návod spustíte na mobilu, tabletu i počítači. To vše pod jedním linkem.",
+    "multiPlatformDescription": "Není potřeba žádná instalace. Návod spustíte na mobilu, tabletu i počítači. Všude pod jedním linkem.",
     "arVrSupport": "Podpora AR,VR",
     "arVrDescription": "Modely jsou optimalizované pro podporu AR,VR"
   }
