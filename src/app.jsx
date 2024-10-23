@@ -32,7 +32,6 @@ const ScrollToHashElement = () => {
   return null;
 };
 
-
 console.log(navigator.language); // detect language of your browser
 
 function App() {
@@ -40,7 +39,6 @@ function App() {
     <Router>
       <main>
         <div className="container py-3">
-           
           <Header />
           {/* This handles scrolling to #hash elements */}
           <ScrollToHashElement />
