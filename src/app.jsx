@@ -11,7 +11,7 @@ import Header from "./components/Header";
 import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
-import i18n from "./i18n";
+import i18n from "../i18n";
 
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
