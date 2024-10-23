@@ -1,22 +1,16 @@
 // App.js
 import React from "react";
 import { useEffect } from "react";
-import Header from "./components/Header";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
 } from "react-router-dom"; // Correct v6 imports
+import Header from "./components/Header";
 import Home from "./pages/home";
-import Featurette from "./components/Featurette";
-import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import ModelViewer from "./components/ModelViewer";
 import Demo from "./pages/demo";
-
-
-
 import i18n from "./i18n";
 
 import "@google/model-viewer"; // Import the model-viewer library
