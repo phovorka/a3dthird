@@ -1,17 +1,20 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
-import HeroSection from "../components/HeroSection";
-import Featurette from "../components/Featurette";
-import ContactForm from "../components/ContactForm";
-import SectionPlus from '../components/sectionPlus'; // Adjust the path to your component
+
+// Lazy loading komponent
+const HeroSection = React.lazy(() => import("../components/HeroSection"));
+const Featurette = React.lazy(() => import("../components/Featurette"));
+const ContactForm = React.lazy(() => import("../components/ContactForm"));
+const SectionPlus = React.lazy(() => import("../components/sectionPlus"));
+
 import "../styles/index.css"; 
-import "../styles/index3d.css"; 
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const { t } = useTranslation(); // Initialize translation
 
   return (
+     <Suspense fallback={<div>Loading...</div>}>
     <section>
       <div className="Home container py-2">
             <HeroSection />
@@ -36,6 +39,7 @@ const Home = () => {
 
       <ContactForm />
     </section>
+       </Suspense>
   );
 };
 
