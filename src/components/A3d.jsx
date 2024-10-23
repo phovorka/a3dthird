@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef,useMemo } from "react";
 import style from "../styles/A3d.css"; // Import only for this component
 import "@google/model-viewer"; // Import the model-viewer library
 import { useTranslation } from 'react-i18next'; // Importing useTranslation for translations
@@ -13,7 +13,7 @@ const A3d = () => {
   const [isDragging, setIsDragging] = useState(false); // Track if the slider is being dragged
   const { t } = useTranslation(); // T function for translations
 
-  const slides = [
+  const slides= useMemo(() => [
     {
       src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/1st.glb?v=1725631156649",
       cameraOrbit: "30deg 70deg 3m",
@@ -69,9 +69,6 @@ const A3d = () => {
       ],
     },
     
-    
- 
-    
         {
       src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/5th.glb?v=1725622326906",
       cameraOrbit: "108deg 65deg 3m",
@@ -110,7 +107,8 @@ const A3d = () => {
       ],
     },
   
-  ];
+  ],
+   [t]);
 
   useEffect(() => {
     const modelViewer = modelViewerRef.current;
