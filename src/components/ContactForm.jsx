@@ -15,6 +15,7 @@ const ContactForm = () => {
               <div className="form-floating mb-3">
                 <input
                   type="text"
+                  name="name"
                   className="form-control"
                   id="floatingInput-1"
                   placeholder={t('contactForm.namePlaceholder')} // Přeložený placeholder
@@ -25,6 +26,7 @@ const ContactForm = () => {
               <div className="form-floating mb-3">
                 <input
                   type="email"
+                  name="email"
                   className="form-control"
                   id="floatingInput-2"
                   placeholder={t('contactForm.emailPlaceholder')} // Přeložený placeholder
@@ -35,6 +37,7 @@ const ContactForm = () => {
               <div className="form-floating mb-3">
                 <input
                   type="tel"
+                  name="phone"
                   className="form-control"
                   id="floatingInput-3"
                   placeholder={t('contactForm.phonePlaceholder')} // Přeložený placeholder
@@ -46,6 +49,7 @@ const ContactForm = () => {
                 <textarea
                   className="form-control"
                   id="floatingTextarea-4"
+                  name="text"
                   placeholder={t('contactForm.messagePlaceholder')} // Přeložený placeholder
                   required
                   style={{ height: '150px' }}
