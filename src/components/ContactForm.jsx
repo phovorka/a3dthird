@@ -11,7 +11,7 @@ const ContactForm = () => {
         <div className="row justify-content-center">
           <div className="col-12 col-lg-5 col-md-8">
             <h2 className="fw-bold">{t('contactForm.title')}</h2> {/* Přeložený nadpis */}
-         <form name="contact"  data-netlify="true">
+         <form name="contact"  method="POST" data-netlify="true">
               <div className="form-floating mb-3">
                 <input
                   type="text"
