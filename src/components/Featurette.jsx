@@ -5,7 +5,7 @@ import ModelViewer from './ModelViewer';
 const Featurette = ({ heading, subheading, description, modelSrc, modelId }) => {
   return (
     <div className="container">
-      <div className="row featurette pb-3">
+      <div className="row featurette pt-5">
         <div className="col-md-7">
           <h2 className="featurette-heading fw-normal lh-1">
             {heading} <span className="text-muted">{subheading}</span>
