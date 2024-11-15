@@ -15,7 +15,7 @@
    "footer": {
     "aboutUs": "O nás", 
     "aboutUsText1": "Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a manuálů, tak jak jej známe dnes. 3D grafikou a webovými technologiemi jsme se zabývali již jako zaměstnanci nadnárodních firem a dnes se snažíme tuto technologickou novinku přenést i do českého prostředí.",
-    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systém pro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženkunašich klientů.",
+    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systém pro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženku našich klientů.",
     "quickNav": "Rychlá navigace",
     "home": "Hlavní strana",
     "demo": "Demo",
@@ -39,9 +39,9 @@
     "description": "Uživatelé mohou model zvětšit, rotovat, nebo posouvat tak jak potřebují. Díky takovéto volnosti se rapidně zkrátí doba nastudování jednotlivých operací."
   },
   "featurette2": {
-    "heading": "Poznejte detaily ve 3D.",
-    "subheading": "Interaktivní vizualizace.",
-    "description": "Assembly 3D vám umožní prozkoumat každý aspekt zblízka a pochopit složitost konstrukce."
+    "heading": "Redukuje čas proškolení o 55%",
+    "subheading": "Chybovost snížena až o 95%",
+    "description": "Výrazným snížením potřebné doby učení zvyšujeme výkonost a spokojenost zaměstnanců a zákazníků"
   },
       "instruction": {
       "usedParts": "Použité díly",
