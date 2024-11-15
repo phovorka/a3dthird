@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
 
           <p className="small m-auto text-center text-muted mt-4 pt-4">
-            {t('footer.createdWith')} <a className="text-primary" href="#">ASSEMBLY3D.eu</a>
+            {t('footer.createdWith')} <a className="text-primary" href="#">Assembly3D.cz</a>
           </p>
         </div>
       </div>
