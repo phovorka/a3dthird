@@ -9,10 +9,10 @@
     "phone": "Telefon",
     "message": "Zpráva",
     "submit": "Poslat",
-    "namePlaceholder": "Vaše celé jméno",
-    "emailPlaceholder": "Vaše emailová adresa",
-    "phonePlaceholder": "Vaše telefonní číslo",
-    "messagePlaceholder": "Vaše zpráva"
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": ""
   },
    "footer": {
     "aboutUs": "O nás", 
