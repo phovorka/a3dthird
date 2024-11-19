@@ -11,7 +11,8 @@ import Header from "./components/Header";
 import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next"; // Import useTranslation
+import i18n from "../i18n";
 import { Helmet } from "react-helmet";
 
 import "@google/model-viewer"; // Import the model-viewer library
@@ -46,7 +47,7 @@ const MetaDescription = () => {
 function App() {
   return (
     <Router>
-       <MetaDescription />
+      <MetaDescription/>
       <main>
         <div className="container py-3">
           <Header />
