@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Assembly 3D is new generation of assembly instruction in 3D"
+},
   "contactForm": {
     "title": "Leave us your contact",
     "name": "Name",

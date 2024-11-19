@@ -1,5 +1,7 @@
 {
-  
+  "meta": {
+    "description": "Assembly 3D představuje revoluci v oblasti montážních návodů. Animace ve 3D přímo ve Vašem prohlížeči. Plná podpora AR a VR. "
+},
     "contactForm": {
     "title": "Nechte nám na sebe kontakt",
     "name": "Jméno",

@@ -11,7 +11,8 @@ import Header from "./components/Header";
 import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
-import i18n from "../i18n";
+import { useTranslation } from 'react-i18next';
+import { Helmet } from "react-helmet";
 
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,10 +34,19 @@ const ScrollToHashElement = () => {
 };
 
 console.log(navigator.language); // detect language of your browser
+const MetaDescription = () => {
+  const { t } = useTranslation();
 
+  return (
+      <Helmet>
+          <meta name="description" content={t('meta.description')} />
+      </Helmet>
+  );
+};
 function App() {
   return (
     <Router>
+       <MetaDescription />
       <main>
         <div className="container py-3">
           <Header />
