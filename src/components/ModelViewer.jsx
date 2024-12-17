@@ -10,13 +10,18 @@ const ModelViewer = ({ src }) => {
   useEffect(() => {
     const modelViewer = modelViewerRef.current;
 
-    if (modelViewer) {
-      initializeModelViewer(modelViewer);
-    }
+     // Cleanup function for listeners and intervals
+     let cleanupListeners = () => {};
 
+     if (modelViewer) {
+       cleanupListeners = initializeModelViewer(modelViewer);
+     }
     return () => {
-      // Cleanup listeners if necessary
-    };
+        // Call the cleanup function
+        cleanupListeners();
+      };
+      
+   
   }, []);
 
   const initializeModelViewer = (modelViewer) => {
@@ -69,6 +74,7 @@ const ModelViewer = ({ src }) => {
     // Handle the cleanup of the interval on component unmount
     return () => {
       clearInterval(interval);
+      
     };
   };
 
@@ -104,7 +110,7 @@ const ModelViewer = ({ src }) => {
           min="0"
           max="100"
           step="0.1"
-          value={sliderValue}
+          value={sliderValue || 0} //*changed
           onChange={handleSliderChange}
           onMouseDown={() => setIsDragging(true)} // Set dragging to true
           onMouseUp={() => setIsDragging(false)} // Set dragging to false

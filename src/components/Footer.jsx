@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="m-auto text-center pb-4">
             <img
-              src="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/Assembly.svg?v=1715948982135"
+              src="https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/Assembly-logo.svg"
               alt="Logo"
               style={{ width: "150px" }}
             />

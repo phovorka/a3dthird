@@ -216,7 +216,7 @@ cursor: pointer;
 .play {
   position: relative;
   cursor: pointer;
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/play_arrow.svg?v=1668438444401");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/play_arrow.svg");
   background-size: 26px;
   background-repeat: no-repeat;
   background-position: center;
@@ -228,7 +228,7 @@ cursor: pointer;
 .pause {
   position: relative;
   cursor: pointer;
-  background-image: url("https://cdn.glitch.global/1540ff5d-0f8c-4dfa-b217-fdbbdafefb7d/pause%20(1).svg?v=1670758874528");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/pause.svg");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -354,7 +354,7 @@ inserted from A3d
 
 
 .arrow-Slide {
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Group%203%20(3).svg?v=1670247507842");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/3Dplayicon.svg");
   background-repeat: no-repeat;
   background-position: center; /* Center the image */
   height: 50px;
@@ -439,7 +439,7 @@ width:100%;
 
 .fullScreen {
   position: absolute;
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/open_in_full.svg?v=1668446191149");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/cf599e9fe7d49e26ee83aba84b14913e91911525/a3d/open_in_full.svg");
   background-size: 26px;
   background-repeat: no-repeat;
   background-position: center;
@@ -458,7 +458,7 @@ width:100%;
 .exitFullscreen {
   position: absolute;
   background-color: white;
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/close_fullscreen.svg?v=1668446190770");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/cf599e9fe7d49e26ee83aba84b14913e91911525/a3d/close_fullscreen.svg");
   background-size: 26px;
   background-repeat: no-repeat;
   background-position: center;
@@ -551,7 +551,7 @@ select {
 }
 
 #usedTools {
-  background-image: url("https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/screw-icon.svg?v=1671275040628");
+  background-image: url("https://raw.githubusercontent.com/phovorka/GLB/cf599e9fe7d49e26ee83aba84b14913e91911525/a3d/screw-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;

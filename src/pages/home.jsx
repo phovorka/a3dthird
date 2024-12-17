@@ -24,7 +24,7 @@ const Home = () => {
         heading={t('featurette1.heading')} 
         subheading={t('featurette1.subheading')} 
         description={t('featurette1.description')} 
-        modelSrc="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436"
+        modelSrc="https://raw.githubusercontent.com/phovorka/GLB/main/a3d/ikea_ass2.glb"
         modelId="bon1"
       />
 
@@ -32,7 +32,7 @@ const Home = () => {
         heading={t('featurette2.heading')} 
         subheading={t('featurette2.subheading')} 
         description={t('featurette2.description')} 
-        modelSrc="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/profil.glb?v=1722942266930"
+        modelSrc="https://raw.githubusercontent.com/phovorka/GLB/main/a3d/profil.glb"
         modelId="bon2"
       />
       <SectionPlus />

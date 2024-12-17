@@ -16,8 +16,8 @@ const LanguageSwitcher = () => {
   // Set flag URL based on current language
   const getFlagUrl = (lng) => {
     return lng === 'cs'
-      ? 'https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' // Czech flag
-      : 'https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877'; // English flag
+      ? 'https://github.com/phovorka/GLB/blob/main/a3d/cz.png?raw=true' // Czech flag
+      : 'https://github.com/phovorka/GLB/blob/main/a3d/eng.png?raw=true'; // English flag
   };
 
   return (
@@ -40,7 +40,7 @@ const LanguageSwitcher = () => {
       <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
         <li className="dropdown-item" onClick={() => changeLanguage('cs')}>
           <img 
-            src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197576.png?v=1729355093877' 
+            src='https://github.com/phovorka/GLB/blob/main/a3d/cz.png?raw=true' 
             alt="Czech flag" 
             width="18" height="18"
             className="me-2"
@@ -48,7 +48,7 @@ const LanguageSwitcher = () => {
         </li>
         <li className="dropdown-item" onClick={() => changeLanguage('en')}>
           <img 
-            src='https://cdn.glitch.global/ebbb9f99-0d27-421b-a7b8-431daef53028/197374.png?v=1729355093877' 
+            src='https://github.com/phovorka/GLB/blob/main/a3d/eng.png?raw=true' 
             alt="English flag" 
             width="18" height="18"
             className="me-2"

@@ -14,27 +14,27 @@ const A3d = () => {
 
   const slides= useMemo(() => [
     {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/1st.glb?v=1725631156649",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/1st.glb",
       cameraOrbit: "30deg 70deg 3m",
       cameraTarget: "2m 12m 2m",
       minOrbit: "auto auto 35m",
       minFov: "20deg",
       description: t('instruction.slides.0'), // Using translation keys
       backgroundImage:
-        "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/1pic.png?v=1670265590781", // Background image URL for the first slide
+        "https://github.com/phovorka/GLB/blob/main/a3d/1pic.png?raw=true", // Background image URL for the first slide
      tools: [
 
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: '101351' },
       ],
     },
     {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/2st.glb",
       cameraOrbit: "40deg 70deg 3m",
       cameraTarget: "-6m 10m 2m",
       minOrbit: "auto auto 40m",
       minFov: "20deg",
       description: t('instruction.slides.1'), // Using translation keys
-      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/2pic.png?v=1670265590116", // Background image URL for the second slide
+      backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/2pic.png?raw=true", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
@@ -42,13 +42,13 @@ const A3d = () => {
     },
     
         {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/2.glb?v=1725470571436",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/",
       cameraOrbit: "214deg 72deg 3m",
       cameraTarget: "-0,04m 9,59m -2,64",
       minOrbit: "auto auto 40m",
       minFov: "20deg",
       description: t('instruction.slides.2'), // Using translation keys
-      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/3pic.png?v=1670265587955", // Background image URL for the second slide
+      backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/3pic.png?raw=true", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
@@ -56,26 +56,26 @@ const A3d = () => {
     },
     
         {
-      src: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5thAnim.glb?v=1670264284954",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/4th.glb",
       cameraOrbit: "113deg 75deg 3m",
       cameraTarget: "-6m 5m 14m",
       minOrbit: "auto auto 35m",
       minFov: "20deg",
       description: t('instruction.slides.3'), // Using translation keys
-      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/5pic.png?v=1670265588553", // Background image URL for the second slide
+      backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/5pic.png?raw=true", // Background image URL for the second slide
           tools: [
          { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
       ],
     },
     
         {
-      src: "https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/5th.glb?v=1725622326906",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/5th.glb",
       cameraOrbit: "108deg 65deg 3m",
       cameraTarget: "3m 7m 14m",
       minOrbit: "auto auto 22m",
       minFov: "20deg",
       description: t('instruction.slides.4'), // Using translation keys
-      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
+      backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/6pic.png?raw=true", // Background image URL for the second slide
           tools: [
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
        { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: '100829' },
@@ -86,7 +86,7 @@ const A3d = () => {
     },
     
         {
-      src: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/BEDBlenderNoAnim.glb?v=1664801803206",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/All_Bed.glb",
       cameraOrbit: "54.31deg 66.45deg auto",
       cameraTarget: "",
       minOrbit: "auto auto auto",
@@ -94,15 +94,15 @@ const A3d = () => {
       description: t('instruction.slides.5'), // Using translation keys
       backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
      tools: [
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: '100829' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%206.svg?v=1670781455759', label: '100716' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%209.svg?v=1670953165258', label: '108184' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%205.svg?v=1670953163724', label: '100001' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: '101351' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100108' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%203.svg', label: '105111' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%207.svg', label: '100829' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%206.svg', label: '100716' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100514' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%209.svg', label: '108184' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%208.svg', label: '105657' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%205.svg', label: '100001' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%204.svg', label: '101351' },
       ],
     },
   
@@ -208,7 +208,7 @@ const A3d = () => {
       <div className="assembly-Instruction px-2 pb-5" id="demo">
         <div className="header">
           <img
-            src="https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/ikea.svg?v=1665664365999"
+            src="https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/ikea.svg"
             className="header-image p-1"
             alt="IKEA Logo" // Adding alt text for accessibility
           />

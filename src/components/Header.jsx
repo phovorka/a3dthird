@@ -15,7 +15,7 @@ const Header = () => {
             className="d-flex align-items-center text-dark text-decoration-none"
           >
             <img
-              src="https://cdn.glitch.global/2bc6ab97-e692-4373-99f6-6e1f98a13434/Assembly.svg?v=1715948982135"
+              src="https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/Assembly-logo.svg"
               width="200px"
               alt="Assembly 3D"
             />
