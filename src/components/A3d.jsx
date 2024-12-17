@@ -24,7 +24,7 @@ const A3d = () => {
         "https://github.com/phovorka/GLB/blob/main/a3d/1pic.png?raw=true", // Background image URL for the first slide
      tools: [
 
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%204.svg?v=1670953163342', label: '101351' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%204.svg', label: '101351' },
       ],
     },
     {
@@ -36,8 +36,8 @@ const A3d = () => {
       description: t('instruction.slides.1'), // Using translation keys
       backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/2pic.png?raw=true", // Background image URL for the second slide
           tools: [
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100108' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100514' },
       ],
     },
     
@@ -50,8 +50,8 @@ const A3d = () => {
       description: t('instruction.slides.2'), // Using translation keys
       backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/3pic.png?raw=true", // Background image URL for the second slide
           tools: [
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%202%20(1).svg?v=1670781334505', label: '100108' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%2010.svg?v=1670953165642', label: '100514' },
+            { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100108' },
+            { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100514' },
       ],
     },
     
@@ -64,7 +64,7 @@ const A3d = () => {
       description: t('instruction.slides.3'), // Using translation keys
       backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/5pic.png?raw=true", // Background image URL for the second slide
           tools: [
-         { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%208.svg?v=1670953164890', label: '105657' },
+         { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%208.svg', label: '105657' },
       ],
     },
     
@@ -77,11 +77,11 @@ const A3d = () => {
       description: t('instruction.slides.4'), // Using translation keys
       backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/6pic.png?raw=true", // Background image URL for the second slide
           tools: [
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%203%20(1).svg?v=1670781338517', label: '105111' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%207.svg?v=1670781455416', label: '100829' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%206.svg?v=1670781455759', label: '100716' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%209.svg?v=1670953165258', label: '108184' },
-       { imgSource: 'https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/Frame%205.svg?v=1670953163724', label: '100001' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%203.svg', label: '105111' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%207.svg', label: '100829' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%206.svg', label: '100716' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%209.svg', label: '108184' },
+       { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%205.svg', label: '100001' },
       ],
     },
     
