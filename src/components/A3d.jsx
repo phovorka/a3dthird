@@ -43,9 +43,9 @@ const A3d = () => {
     
         {
       src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/3rd.glb",
-      cameraOrbit: "214deg 72deg 3m",
-      cameraTarget: "-0,04m 9,59m -2,64",
-      minOrbit: "auto auto 40m",
+      cameraOrbit: "109deg 70deg 3m",
+      cameraTarget: "-20m 6m -4m",
+      minOrbit: "auto auto 55m",
       minFov: "20deg",
       description: t('instruction.slides.2'), // Using translation keys
       backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/3pic.png?raw=true", // Background image URL for the second slide
