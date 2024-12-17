@@ -42,7 +42,7 @@ const A3d = () => {
     },
     
         {
-      src: "https://raw.githubusercontent.com/phovorka/GLB/main/",
+      src: "https://raw.githubusercontent.com/phovorka/GLB/main/a3d/models/3rd.glb",
       cameraOrbit: "214deg 72deg 3m",
       cameraTarget: "-0,04m 9,59m -2,64",
       minOrbit: "auto auto 40m",
@@ -92,7 +92,7 @@ const A3d = () => {
       minOrbit: "auto auto auto",
       minFov: "20deg",
       description: t('instruction.slides.5'), // Using translation keys
-      backgroundImage: "https://cdn.glitch.global/82e9051b-34b9-4596-8cb8-f6f8421193ef/6pic.png?v=1670265587394", // Background image URL for the second slide
+      backgroundImage: "https://github.com/phovorka/GLB/blob/main/a3d/poster%20(3).png?raw=true", // Background image URL for the second slide
      tools: [
        { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%2010.svg', label: '100108' },
        { imgSource: 'https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/tools/Frame%203.svg', label: '105111' },
