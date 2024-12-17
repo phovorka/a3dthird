@@ -14,6 +14,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="m-auto text-center pb-4">
             <img
+            loading="lazy"
               src="https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/Assembly-logo.svg"
               alt="Logo"
               style={{ width: "150px" }}

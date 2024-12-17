@@ -30,6 +30,7 @@ const LanguageSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <img 
+        loading="lazy"
           src={getFlagUrl(currentLanguage)} 
           alt={`${currentLanguage === 'cs' ? 'Czech' : 'English'} flag`} 
           width="18" height="18"
@@ -40,6 +41,7 @@ const LanguageSwitcher = () => {
       <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
         <li className="dropdown-item" onClick={() => changeLanguage('cs')}>
           <img 
+          loading="lazy"
             src='https://github.com/phovorka/GLB/blob/main/a3d/cz.png?raw=true' 
             alt="Czech flag" 
             width="18" height="18"
@@ -48,6 +50,7 @@ const LanguageSwitcher = () => {
         </li>
         <li className="dropdown-item" onClick={() => changeLanguage('en')}>
           <img 
+          loading="lazy"
             src='https://github.com/phovorka/GLB/blob/main/a3d/eng.png?raw=true' 
             alt="English flag" 
             width="18" height="18"

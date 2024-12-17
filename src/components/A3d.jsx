@@ -211,6 +211,7 @@ const A3d = () => {
             src="https://raw.githubusercontent.com/phovorka/GLB/4f0dcfc92d20bea3803ae19b904370a25eea4f6d/a3d/ikea.svg"
             className="header-image p-1"
             alt="IKEA Logo" // Adding alt text for accessibility
+            loading="lazy"
           />
           <h5>
             <p className="ps-2 btn">
@@ -256,7 +257,7 @@ const A3d = () => {
                 {slides[currentSlide].tools.map((tool, index) => (
                   <div key={index} className="tool-item d-flex flex-column align-items-center">
                     <p className="text-muted small">{tool.label}</p>
-                      <img src={tool.imgSource} className="img-tools" alt={tool.label} />
+                      <img src={tool.imgSource} className="img-tools" alt={tool.label} loading="lazy"/>
                    
                   </div>
                 ))}

@@ -15,6 +15,7 @@ const Header = () => {
             className="d-flex align-items-center text-dark text-decoration-none"
           >
             <img
+            loading="lazy"
               src="https://raw.githubusercontent.com/phovorka/GLB/refs/heads/main/a3d/Assembly-logo.svg"
               width="200px"
               alt="Assembly 3D"

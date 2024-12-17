@@ -38,6 +38,7 @@ const SectionPlus = () => {
               <div className="card-body d-flex flex-column gap-4">
                 <div>
                   <img
+                  loading="lazy"
                     src="https://modelviewer.dev/assets/ic_modelviewer.svg"
                     onError={(e) => (e.target.src = "image.png")}
                     width="64px"
