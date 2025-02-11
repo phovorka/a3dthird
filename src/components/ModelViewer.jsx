@@ -95,7 +95,7 @@ const ModelViewer = ({ src }) => {
       shadow-intensity="1"
       camera-controls
       enable-pan
-      camera-orbit="54.31deg 66.45deg auto"
+      camera-orbit="39.29deg 60deg 0.4253m"
       min-camera-orbit="auto 0deg auto"
       max-camera-orbit="auto 180deg auto"
       touch-action="none"
