@@ -63,5 +63,22 @@
     "multiPlatformDescription": "No installation required. You can run the guide on mobile, tablet, and computer. All under one link.",
     "arVrSupport": "AR/VR Support",
     "arVrDescription": "Models are optimized for AR/VR support."
+  },
+  "comparison": {
+    "title": "Optimal Perspective.",
+    "subtitle": "Optimum Performance.",
+    "description": "Assembly 3D makes communicating instructions easy and following instructions even easier. Take your workforce to the next level with digital work instructions proven to boost productivity, outcomes, and confidence.",
+    "goFromTitle": "Go from",
+    "staticManuals": "Static paper manuals or PDFs",
+    "videos": "Videos",
+    "explodedDiagrams": "Exploded-view diagrams",
+    "figuringOut": "Figuring it out on your own",
+    "customerSupport": "Calls to customer support",
+    "toTitle": "To",
+    "360Views": "360° views",
+    "touchInteraction": "Interactive touch-screen manipulation",
+    "animatedGuides": "Animated 3D guides",
+    "immersiveReality": "Immersive reality",
+    "mobileApp": "No App installation"
   }
 }

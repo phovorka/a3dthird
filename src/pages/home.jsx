@@ -6,9 +6,11 @@ const HeroSection = React.lazy(() => import("../components/HeroSection"));
 const Featurette = React.lazy(() => import("../components/Featurette"));
 const ContactForm = React.lazy(() => import("../components/ContactForm"));
 const SectionPlus = React.lazy(() => import("../components/sectionPlus"));
+const FeatureComparison = React.lazy(() => import("../components/Comparison"));
 
 import "../styles/index.css"; 
 import { useTranslation } from 'react-i18next';
+
 
 const Home = () => {
   const { t } = useTranslation(); // Initialize translation
@@ -36,6 +38,7 @@ const Home = () => {
         modelId="bon2"
       />
       <SectionPlus />
+      <FeatureComparison />
 
       <ContactForm />
     </section>

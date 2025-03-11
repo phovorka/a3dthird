@@ -65,5 +65,22 @@
     "multiPlatformDescription": "Není potřeba žádná instalace. Návod spustíte na mobilu, tabletu i počítači. Všude pod jedním linkem.",
     "arVrSupport": "Podpora AR,VR",
     "arVrDescription": "Modely jsou optimalizované pro podporu AR,VR"
+  },
+  "comparison": {
+    "title": "Optimální perspektiva.",
+    "subtitle": "Optimální výkon.",
+    "description": "Assembly 3D usnadňuje komunikaci pomocí vizuálně přehledných instrukcí. Posuňte svou pracovní sílu na vyšší úroveň s digitálními pracovními instrukcemi, které prokazatelně zvyšují produktivitu, výsledky a sebevědomí.",
+    "goFromTitle": "Přejděte z",
+    "staticManuals": "Statických papírových manuálů nebo PDF",
+    "videos": "Videí",
+    "explodedDiagrams": "Rozložených schémat",
+    "figuringOut": "Zjišťování na vlastní pěst",
+    "customerSupport": "Hovorů na zákaznickou podporu",
+    "toTitle": "Na",
+    "360Views": "360° pohledy",
+    "touchInteraction": "Interaktivní dotykovou manipulaci",
+    "animatedGuides": "Animované 3D průvodce",
+    "immersiveReality": "AR (Rozšířenou realitu)",
+    "mobileApp": "Plnohodnotnou aplikaci spustitelnou z jakéhokoliv zařízení"
   }
 }
