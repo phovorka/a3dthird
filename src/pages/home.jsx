@@ -13,8 +13,12 @@ import { useTranslation } from 'react-i18next';
 
 
 const Home = () => {
-  const { t } = useTranslation(); // Initialize translation
+  const { t,ready } = useTranslation(); // Initialize translation
 
+  if (!ready) {
+    return <div>Načítání ...</div>;
+  }
+  
   return (
      <Suspense fallback={<div>Loading...</div>}>
     <section>
