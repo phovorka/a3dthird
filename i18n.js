@@ -23,7 +23,7 @@ i18n
       loadPath: "/{{lng}}/translation.json", // Cesta k překladovým souborům
     },
     react: {
-      useSuspense: false,
+      useSuspense: true,
     },
   });
 
