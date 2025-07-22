@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "description": "Assembly 3D představuje revoluci v oblasti montážních návodů. Animace ve 3D přímo ve Vašem prohlížeči. Plná podpora AR a VR. "
+},
+    "contactForm": {
+    "title": "Nechte nám na sebe kontakt",
+    "name": "Jméno",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Zpráva",
+    "submit": "Poslat",
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": ""
+  },
+   "footer": {
+    "aboutUs": "O nás", 
+    "aboutUsText1": "Jsme malý tým kreativců, kteří se rozhodli změnit svět návodů a manuálů, tak jak jej známe dnes. 3D grafikou a webovými technologiemi jsme se zabývali již jako zaměstnanci nadnárodních firem a dnes se snažíme tuto technologickou novinku přenést i do českého prostředí.",
+    "aboutUsText2": "Díky naším letitým zkušenostem jsme vytvořily velmi efektivní systém pro tvorbu a prezentaci 3D návodů, který našim zakazníkům nabízíme za cenu, která mnohdy odpovídá pouhým nákladům tisku manuálů na papír. Tím tak šetříme nejen životní prostředí, ale také peneženku našich klientů.",
+    "quickNav": "Rychlá navigace",
+    "home": "Hlavní strana",
+    "demo": "Demo",
+    "contact": "Kontakt",
+    "createdWith": "Vytvořeno s ❤️ v Praze"
+  },
+    "heroSection": {
+    "title": "3D animované montážní návody",
+    "subtitle": "Řekni sbohem tištěným návodům. Využij volnosti 3D. Bez otravné instalace."
+
+  },
+    "header": {
+    "home": "Hlavní strana",
+    "demo": "Demo",
+    "contact": "Kontakt"
+  },
+
+   "featurette1": {
+    "heading": "Zaujme na první pohled.",
+    "subheading": "Volností 3D.",
+    "description": "Uživatelé mohou model zvětšit, rotovat, nebo posouvat tak jak potřebují. Díky takovéto volnosti se rapidně zkrátí doba nastudování jednotlivých operací."
+  },
+  "featurette2": {
+    "heading": "Redukuje čas proškolení o 55%.",
+    "subheading": "Chybovost snížena až o 95%.",
+    "description": "Výrazným snížením potřebné doby učení zvyšujeme výkonost a spokojenost zaměstnanců a zákazníků."
+  },
+      "instruction": {
+      "usedParts": "Použité díly",
+      "ikea": "IKEA",
+      "gulliverCot": "GULLIVER ",
+      "slides": [
+        "1) Vlož dřevěné kolíky",
+        "2) Přišroubuj přední čelo",
+        "3) Přišroubuj zadní čelo",
+        "4) Vlož záchytná oka",
+        "5) Připevni podložku",
+        "Vše"
+      ]
+    },
+   "sectionPlus": {
+    "coreTech": "Naším jádrem je bezpečná technologie od firmy Google",
+    "coreDescription": "Naše řešení 3D grafiky na webu stojí na technologii model-vieweru od firmy Google.",
+    "multiPlatform": "100% multi-platformní",
+    "multiPlatformDescription": "Není potřeba žádná instalace. Návod spustíte na mobilu, tabletu i počítači. Všude pod jedním linkem.",
+    "arVrSupport": "Podpora AR,VR",
+    "arVrDescription": "Modely jsou optimalizované pro podporu AR,VR"
+  },
+  "comparison": {
+    "title": "Optimální perspektiva.",
+    "subtitle": "Optimální výkon.",
+    "description": "Assembly 3D usnadňuje komunikaci pomocí vizuálně přehledných instrukcí. Posuňte svou pracovní sílu na vyšší úroveň s digitálními pracovními instrukcemi, které prokazatelně zvyšují produktivitu, výsledky a sebevědomí.",
+    "goFromTitle": "Přejděte z",
+    "staticManuals": "Statických papírových manuálů nebo PDF",
+    "videos": "Videí",
+    "explodedDiagrams": "Rozložených schémat",
+    "figuringOut": "Zjišťování na vlastní pěst",
+    "customerSupport": "Hovorů na zákaznickou podporu",
+    "toTitle": "Na",
+    "360Views": "360° pohledy",
+    "touchInteraction": "Interaktivní dotykovou manipulaci",
+    "animatedGuides": "Animované 3D průvodce",
+    "immersiveReality": "AR (Rozšířenou realitu)",
+    "mobileApp": "Plnohodnotnou aplikaci spustitelnou z jakéhokoliv zařízení"
+  }
+}

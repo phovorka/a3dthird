@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "description": "Assembly 3D is new generation of assembly instruction in 3D"
+},
+  "contactForm": {
+    "title": "Leave us your contact",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send",
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": "Your message"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutUsText1": "We are a small team of creatives who decided to change the world of instructions and manuals as we know it today. We have worked with 3D graphics and web technologies as employees of multinational companies, and now we strive to bring this technological innovation into the Czech environment.",
+    "aboutUsText2": "Thanks to our years of experience, we have created a very effective system for the creation and presentation of 3D instructions, which we offer to our customers at a price that often corresponds to just the printing costs of manuals on paper. This way, we not only save the environment but also the wallets of our clients.",
+    "quickNav": "Quick Navigation",
+    "home": "Home Page",
+    "demo": "Demo",
+    "contact": "Contact",
+    "createdWith": "Created with ❤️ in Prague"
+  },
+  "heroSection": {
+    "title": "3D Animated Assembly Instructions",
+    "subtitle": "Say goodbye to printed manuals. Embrace the freedom of 3D. No annoying installation."
+  },
+  "header": {
+    "home": "Home Page",
+    "demo": "Demo",
+    "contact": "Contact"
+  },
+  "featurette1": {
+    "heading": "Captivating at first glance.",
+    "subheading": "The freedom of 3D.",
+    "description": "Users can enlarge, rotate, or move the model as needed. This freedom significantly reduces the time required to learn individual operations."
+  },
+  "featurette2": {
+    "heading": "Reduces Training Time by 55%",
+    "subheading": "Error Rate Reduced by Up to 95%",
+    "description": "By significantly reducing the required learning time, we enhance the performance and satisfaction of employees and customers."
+  },
+  "instruction": {
+    "usedParts": "Used Parts",
+    "ikea": "IKEA",
+    "gulliverCot": "GULLIVER ",
+    "slides": [
+      "1) Insert wooden pegs",
+      "2) Screw on the front panel",
+      "3) Screw on the back panel",
+      "4) Insert the retaining eyes",
+      "5) Attach the pad",
+      "All"
+    ]
+  },
+    "sectionPlus": {
+    "coreTech": "Our core is safe technology from Google",
+    "coreDescription": "Our 3D graphics solution on the web is based on Google's model-viewer technology.",
+    "multiPlatform": "100% multi-platform",
+    "multiPlatformDescription": "No installation required. You can run the guide on mobile, tablet, and computer. All under one link.",
+    "arVrSupport": "AR/VR Support",
+    "arVrDescription": "Models are optimized for AR/VR support."
+  },
+  "comparison": {
+    "title": "Optimal Perspective.",
+    "subtitle": "Optimum Performance.",
+    "description": "Assembly 3D makes communicating instructions easy and following instructions even easier. Take your workforce to the next level with digital work instructions proven to boost productivity, outcomes, and confidence.",
+    "goFromTitle": "Go from",
+    "staticManuals": "Static paper manuals or PDFs",
+    "videos": "Videos",
+    "explodedDiagrams": "Exploded-view diagrams",
+    "figuringOut": "Figuring it out on your own",
+    "customerSupport": "Calls to customer support",
+    "toTitle": "To",
+    "360Views": "360° views",
+    "touchInteraction": "Interactive touch-screen manipulation",
+    "animatedGuides": "Animated 3D guides",
+    "immersiveReality": "Immersive reality",
+    "mobileApp": "No App installation"
+  }
+}
