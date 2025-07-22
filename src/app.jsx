@@ -12,9 +12,9 @@ import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
 import { useTranslation } from "react-i18next"; // Import useTranslation
-import i18n from "../i18n";
+//import i18n from "../i18n";
 import { Helmet } from "react-helmet";
-
+import '../i18n'; // <-- Načtení konfigurace překladů
 import "@google/model-viewer"; // Import the model-viewer library
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";

@@ -18,7 +18,7 @@ const Home = () => {
   if (!ready) {
     return <div>Načítání ...</div>;
   }
-  
+
   return (
      <Suspense fallback={<div>Loading...</div>}>
     <section>
