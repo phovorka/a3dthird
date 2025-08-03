@@ -1,4 +1,4 @@
-// components/ContactForm.js
+// components/ContactForm.jsx
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 

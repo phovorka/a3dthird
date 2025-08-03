@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Lazy loading komponent
 const HeroSection = React.lazy(() => import("../components/HeroSection"));
 const Featurette = React.lazy(() => import("../components/Featurette"));
-const ContactForm = React.lazy(() => import("../components/ContactForm"));
+const Contact = React.lazy(() => import("../components/Contact"));
 const SectionPlus = React.lazy(() => import("../components/sectionPlus"));
 const FeatureComparison = React.lazy(() => import("../components/Comparison"));
 
@@ -44,7 +44,7 @@ const Home = () => {
       <SectionPlus />
       <FeatureComparison />
 
-      <ContactForm />
+      <Contact />
     </section>
        </Suspense>
   );

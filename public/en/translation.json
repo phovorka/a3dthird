@@ -14,6 +14,13 @@
     "phonePlaceholder": "(+420) 773 598 551",
     "messagePlaceholder": "Your message"
   },
+  "contact": {
+    "title": "Leave us your contact",
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": ""
+  },
   "footer": {
     "aboutUs": "About Us",
     "aboutUsText1": "We are a small team of creatives who decided to change the world of instructions and manuals as we know it today. We have worked with 3D graphics and web technologies as employees of multinational companies, and now we strive to bring this technological innovation into the Czech environment.",
