@@ -14,7 +14,7 @@
     "phonePlaceholder": "(+420) 773 598 551",
     "messagePlaceholder": "Your message",
     "errorMessage": "Mistake on frontend",
-     "successMessage": "Message was sent.Thanks."
+    "successMessage": "Message was sent.Thanks."
   },
   "contact": {
     "title": "Direct message",
