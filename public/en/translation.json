@@ -12,10 +12,11 @@
     "namePlaceholder": "Petr Hovorka",
     "emailPlaceholder": "hovorka@assembly3d.cz",
     "phonePlaceholder": "(+420) 773 598 551",
-    "messagePlaceholder": "Your message"
+    "messagePlaceholder": "Your message",
+    "errorMessage": "Mistake on frontend"
   },
   "contact": {
-    "title": "Leave us your contact",
+    "title": "Direct message",
     "namePlaceholder": "Petr Hovorka",
     "emailPlaceholder": "hovorka@assembly3d.cz",
     "phonePlaceholder": "(+420) 773 598 551",

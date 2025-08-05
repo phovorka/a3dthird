@@ -1,9 +1,42 @@
 // components/ContactForm.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
   const { t } = useTranslation(); // Hook pro překlady
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert(t('contactForm.successMessage'));
+      } else {
+        alert(t('contactForm.errorMessage'));
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert(t('contactForm.errorMessage'));
+    }
+  };
 
   return (
     <section className="py-4 bg-light pb-5 pt-5" id="contact">
@@ -11,13 +44,15 @@ const ContactForm = () => {
         <div className="row justify-content-center">
           <div className="col-12 col-lg-5 col-md-8">
             <h2 className="fw-bold">{t('contactForm.title')}</h2> {/* Přeložený nadpis */}
-         <form name="contact"  method="POST" data-netlify="true">
+         <form onSubmit={handleSubmit}>
               <div className="form-floating mb-3">
                 <input
                   type="text"
                   name="name"
                   className="form-control"
                   id="floatingInput-1"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder={t('contactForm.namePlaceholder')} // Přeložený placeholder
                   required
                 />
@@ -29,6 +64,8 @@ const ContactForm = () => {
                   name="email"
                   className="form-control"
                   id="floatingInput-2"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder={t('contactForm.emailPlaceholder')} // Přeložený placeholder
                   required
                 />
@@ -40,6 +77,8 @@ const ContactForm = () => {
                   name="phone"
                   className="form-control"
                   id="floatingInput-3"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder={t('contactForm.phonePlaceholder')} // Přeložený placeholder
                   required
                 />
@@ -49,8 +88,10 @@ const ContactForm = () => {
                 <textarea
                   className="form-control"
                   id="floatingTextarea-4"
-                  name="text"
+                  name="message"
                   placeholder={t('contactForm.messagePlaceholder')} // Přeložený placeholder
+                  value={formData.message}
+                  onChange={handleChange}
                   required
                   style={{ height: '150px' }}
                 ></textarea>

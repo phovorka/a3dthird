@@ -1,19 +1,26 @@
 {
-  "name": "Assembly 3D",
+  "name": "Assembly3D",
   "version": "0.0.5",
   "description": "A simple React single page app, built with Vite and React.",
   "scripts": {
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+      "start-server": "node src/emails/server.js"
   },
   "dependencies": {
     "@google/model-viewer": "^3.5.0",
+    "@react-email/components": "^0.4.0",
+    "@react-email/render": "^1.1.4",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
     "i18next": "^23.15.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",
+    "nodemailer": "^7.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
