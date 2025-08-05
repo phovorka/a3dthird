@@ -13,7 +13,8 @@
     "emailPlaceholder": "hovorka@assembly3d.cz",
     "phonePlaceholder": "(+420) 773 598 551",
     "messagePlaceholder": "",
-     "errorMessage": "Mistake on frontend"
+     "errorMessage": "Mistake on frontend",
+     "successMessage": "Zpráva byla odeslána."
   },
   "contact": {
     "title": "Přímý kontakt",
