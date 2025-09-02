@@ -8,7 +8,6 @@ const Contact = React.lazy(() => import("../components/Contact"));
 const ContactForm = React.lazy(() => import("../components/ContactForm"));
 const SectionPlus = React.lazy(() => import("../components/sectionPlus"));
 const FeatureComparison = React.lazy(() => import("../components/Comparison"));
-
 import "../styles/index.css"; 
 import { useTranslation } from 'react-i18next';
 

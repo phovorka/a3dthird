@@ -1,4 +1,5 @@
 // src/App.js
+// ToDo: add page for 3d configurators
 import React from "react";
 import { useEffect } from "react";
 import {
@@ -6,15 +7,14 @@ import {
   Routes,
   Route,
   useLocation,
-} from "react-router-dom"; // Correct v6 imports
+} from "react-router-dom"; 
 import Header from "./components/Header";
 import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
-import { useTranslation } from "react-i18next"; // Import useTranslation
+import { useTranslation } from "react-i18next"; 
 import { Helmet } from "react-helmet";
-
-import "@google/model-viewer"; // Import the model-viewer library
+import "@google/model-viewer"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 

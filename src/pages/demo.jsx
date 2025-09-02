@@ -1,4 +1,4 @@
-// components/Demo.js
+// src/components/demo.js
 import React from 'react';
 import A3d from '../components/A3d';
 
