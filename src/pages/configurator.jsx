@@ -1,3 +1,4 @@
+// src/pages/configurator.jsx
 import React from 'react';
 import Config3d from '../components/Config3d';
 
