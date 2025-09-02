@@ -1,9 +1,9 @@
+// src/components/Config3D.jsx
+// content for Configurator page 
 import React, { useState, useEffect, useRef,useMemo } from "react";
-import "@google/model-viewer"; // Import the model-viewer library
-import { useTranslation } from 'react-i18next'; // Importing useTranslation for translations
+import "@google/model-viewer"; 
+import { useTranslation } from 'react-i18next'; 
 import './config3d.module.css';
-
-
 
 const Config3d = () => {
 
@@ -16,28 +16,7 @@ const Config3d = () => {
       <p className="text-muted">
         {t("comparison.description")}
       </p>
-      <div className="row mt-4">
-        <div className="col-md-5 offset-md-1 bg-light p-4 rounded shadow">
-          <h4 className="fw-bold">{t("comparison.goFromTitle")}</h4>
-          <ul className="list-unstyled text-start">
-            <li className="text-danger">❌ {t("comparison.staticManuals")}</li>
-            <li className="text-danger">❌ {t("comparison.videos")}</li>
-            <li className="text-danger">❌ {t("comparison.explodedDiagrams")}</li>
-            <li className="text-danger">❌ {t("comparison.figuringOut")}</li>
-            <li className="text-danger">❌ {t("comparison.customerSupport")}</li>
-          </ul>
-        </div>
-        <div className="col-md-5 bg-light p-4 rounded shadow">
-          <h4 className="fw-bold">{t("comparison.toTitle")}</h4>
-          <ul className="list-unstyled text-start">
-            <li className="text-success">✔️ {t("comparison.360Views")}</li>
-            <li className="text-success">✔️ {t("comparison.touchInteraction")}</li>
-            <li className="text-success">✔️ {t("comparison.animatedGuides")}</li>
-            <li className="text-success">✔️ {t("comparison.immersiveReality")}</li>
-            <li className="text-success">✔️ {t("comparison.mobileApp")}</li>
-          </ul>
-        </div>
-      </div>
+
     </div>
   );
 };

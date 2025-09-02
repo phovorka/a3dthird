@@ -91,5 +91,8 @@
     "animatedGuides": "Animované 3D průvodce",
     "immersiveReality": "AR (Rozšířenou realitu)",
     "mobileApp": "Plnohodnotnou aplikaci spustitelnou z jakéhokoliv zařízení"
+  },
+  "configurator": {
+    "title": "3D Konfigurator za hubičku"
   }
 }

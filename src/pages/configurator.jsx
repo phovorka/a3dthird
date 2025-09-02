@@ -6,7 +6,6 @@ const Configurator = () => {
     return (
        <div className="Configurator">
               <Config3d />
-
         </div>
     );
   };

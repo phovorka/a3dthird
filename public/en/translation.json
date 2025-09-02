@@ -89,5 +89,8 @@
     "animatedGuides": "Animated 3D guides",
     "immersiveReality": "Immersive reality",
     "mobileApp": "No App installation"
+  },
+  "configurator": {
+    "title": "3D Configurator for fair price"
   }
 }
