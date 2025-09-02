@@ -1,4 +1,4 @@
-// components/Featurette.js
+// src/components/Featurette.js
 import React from 'react';
 import ModelViewer from './ModelViewer';
 

@@ -17,6 +17,7 @@ import { Helmet } from "react-helmet";
 import "@google/model-viewer"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import i18n from "../i18n"; // never read but important for function
 
 const ScrollToHashElement = () => {
   const location = useLocation();
