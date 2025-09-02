@@ -6,8 +6,8 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-      "start-server": "node src/emails/server.js"
+    "serve": "vite preview"
+   
   },
   "dependencies": {
     "@google/model-viewer": "^3.5.0",
