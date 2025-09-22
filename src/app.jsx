@@ -18,6 +18,7 @@ import "@google/model-viewer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import i18n from "../i18n"; // never read but important for function
+import Viewer from "./pages/viewer";
 
 const ScrollToHashElement = () => {
   const location = useLocation();
@@ -57,6 +58,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pages/demo" element={<Demo />} />
+          <Route path="/pages/viewer" element={<Viewer />} />
         </Routes>
         <Footer />
       </main>
