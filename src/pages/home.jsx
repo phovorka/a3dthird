@@ -27,17 +27,17 @@ const Home = () => {
       </div>
       
       <Featurette
-        heading={t('featurette1.heading')} 
-        subheading={t('featurette1.subheading')} 
-        description={t('featurette1.description')} 
+        heading={t('featurette1.heading')}
+        subheading={t('featurette1.subheading')}
+        description={t('featurette1.description')}
         modelSrc="https://raw.githubusercontent.com/phovorka/GLB/main/a3d/ikea_ass2.glb"
         modelId="bon1"
       />
 
       <Featurette
-        heading={t('featurette2.heading')} 
-        subheading={t('featurette2.subheading')} 
-        description={t('featurette2.description')} 
+        heading={t('featurette2.heading')}
+        subheading={t('featurette2.subheading')}
+        description={t('featurette2.description')}
         modelSrc="https://raw.githubusercontent.com/phovorka/GLB/main/a3d/profil.glb"
         modelId="bon2"
       />
