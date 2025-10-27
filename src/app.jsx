@@ -7,6 +7,8 @@ import {
   Routes,
   Route,
   useLocation,
+  useParams,
+  Navigate,
 } from "react-router-dom"; 
 import Header from "./components/Header";
 import Home from "./pages/home";
@@ -36,7 +38,6 @@ const ScrollToHashElement = () => {
   return null;
 };
 
-console.log(navigator.language); // detect language of your browser
 const MetaDescription = () => {
   const { t } = useTranslation();
 
@@ -46,24 +47,46 @@ const MetaDescription = () => {
       </Helmet>
   );
 };
+
+const AppContent = () => {
+  const { lang } = useParams();
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
+
+  return (
+    <main>
+      <MetaDescription />
+      <div className="container py-3">
+        <Header />
+        <ScrollToHashElement />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pages/demo" element={<Demo />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/viewer" element={<Viewer />} />
+      </Routes>
+      <Footer />
+    </main>
+  );
+};
+
 function App() {
+  const supportedLngs = ["en", "cs"];
+  const browserLang = navigator.language.split("-")[0];
+  const defaultLang = supportedLngs.includes(browserLang) ? browserLang : "en";
+
   return (
     <Router>
-      <MetaDescription/>
-      <main>
-        <div className="container py-3">
-          <Header />
-          {/* This handles scrolling to #hash elements */}
-          <ScrollToHashElement />
-        </div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pages/demo" element={<Demo />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/viewer" element={<Viewer />} />
-        </Routes>
-        <Footer />
-      </main>
+      <Routes>
+        <Route path="/" element={<Navigate to={`/${defaultLang}`} replace />} />
+        <Route path="/:lang/*" element={<AppContent />} />
+      </Routes>
     </Router>
   );
 }

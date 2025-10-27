@@ -12,6 +12,15 @@
     "namePlaceholder": "Petr Hovorka",
     "emailPlaceholder": "hovorka@assembly3d.cz",
     "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": "",
+     "errorMessage": "Mistake on frontend",
+     "successMessage": "Zpráva byla odeslána."
+  },
+  "contact": {
+    "title": "Přímý kontakt",
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
     "messagePlaceholder": ""
   },
    "footer": {
@@ -32,7 +41,8 @@
     "header": {
     "home": "Hlavní strana",
     "demo": "Demo",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "login": "Přihlášení"
   },
 
    "featurette1": {
@@ -82,5 +92,11 @@
     "animatedGuides": "Animované 3D průvodce",
     "immersiveReality": "AR (Rozšířenou realitu)",
     "mobileApp": "Plnohodnotnou aplikaci spustitelnou z jakéhokoliv zařízení"
+  },
+  "configurator": {
+    "title": "3D Konfigurator za hubičku"
+  },
+  "login": {
+    "title": "Přihlášení"
   }
 }

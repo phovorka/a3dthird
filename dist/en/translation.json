@@ -12,7 +12,16 @@
     "namePlaceholder": "Petr Hovorka",
     "emailPlaceholder": "hovorka@assembly3d.cz",
     "phonePlaceholder": "(+420) 773 598 551",
-    "messagePlaceholder": "Your message"
+    "messagePlaceholder": "Your message",
+    "errorMessage": "Mistake on frontend",
+    "successMessage": "Message was sent.Thanks."
+  },
+  "contact": {
+    "title": "Direct message",
+    "namePlaceholder": "Petr Hovorka",
+    "emailPlaceholder": "hovorka@assembly3d.cz",
+    "phonePlaceholder": "(+420) 773 598 551",
+    "messagePlaceholder": ""
   },
   "footer": {
     "aboutUs": "About Us",
@@ -31,7 +40,8 @@
   "header": {
     "home": "Home Page",
     "demo": "Demo",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Login"
   },
   "featurette1": {
     "heading": "Captivating at first glance.",
@@ -80,5 +90,11 @@
     "animatedGuides": "Animated 3D guides",
     "immersiveReality": "Immersive reality",
     "mobileApp": "No App installation"
+  },
+  "configurator": {
+    "title": "3D Configurator for fair price"
+  },
+  "login": {
+    "title": "Login"
   }
 }

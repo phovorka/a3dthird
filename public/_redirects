@@ -1,1 +1,3 @@
-http://*  https://:splat  301!
+/en/demo/*   /en/demo/:splat   200
+/cs/demo/*   /cs/demo/:splat   200
+/*            /index.html      200
