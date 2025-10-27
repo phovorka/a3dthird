@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslation } from "react-i18next"; // Import useTranslation
+import { useTranslation } from "react-i18next"; 
 
 const Header = () => {
-  const { t } = useTranslation(); // Initialize translation
+  const { t } = useTranslation(); 
 
   return (
     <header>
@@ -24,19 +24,19 @@ const Header = () => {
 
           <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
             <Link className="me-3 py-2 text-dark text-decoration-none" to="/">
-              {t("header.home")} {/* Translated home link */}
+              {t("header.home")} 
             </Link>
             <Link
               className="me-3 py-2 text-dark text-decoration-none"
-              to="/pages/demo#demo"
+              to="/pages/demo"
             >
-              {t("header.demo")} {/* Translated demo link */}
+              {t("header.demo")} 
             </Link>
             <Link
               className="me-3 py-2 text-dark text-decoration-none"
               to="/login"
             >
-                            {t("header.login")} {/* Translated contact link */}
+            {t("header.login")} {/* Translated contact link */}
 
             </Link>
             <Link
