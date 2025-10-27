@@ -40,7 +40,8 @@
   "header": {
     "home": "Home Page",
     "demo": "Demo",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Login"
   },
   "featurette1": {
     "heading": "Captivating at first glance.",

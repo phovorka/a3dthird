@@ -33,6 +33,13 @@ const Header = () => {
               {t("header.demo")} {/* Translated demo link */}
             </Link>
             <Link
+              className="me-3 py-2 text-dark text-decoration-none"
+              to="/login"
+            >
+                            {t("header.login")} {/* Translated contact link */}
+
+            </Link>
+            <Link
               className="py-2 text-dark text-decoration-none"
               to="/#contact"
             >

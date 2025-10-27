@@ -12,6 +12,7 @@ import Header from "./components/Header";
 import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Demo from "./pages/demo";
+import Login from "./pages/Login";
 import { useTranslation } from "react-i18next"; 
 import { Helmet } from "react-helmet";
 import "@google/model-viewer"; 
@@ -58,6 +59,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pages/demo" element={<Demo />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/viewer" element={<Viewer />} />
         </Routes>
         <Footer />
