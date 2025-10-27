@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
+
 
 const Login = () => {
+  const { t } = useTranslation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -12,8 +15,8 @@ const Login = () => {
 
   return (
     <div className="container">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
+      <h2>{t("login.title")}</h2>
+      <form onSubmit={handleLogin} className="mb-5">
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Username</label>
           <input

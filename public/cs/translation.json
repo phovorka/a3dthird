@@ -95,5 +95,8 @@
   },
   "configurator": {
     "title": "3D Konfigurator za hubičku"
+  },
+  "login": {
+    "title": "Přihlášení"
   }
 }

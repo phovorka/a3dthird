@@ -93,5 +93,8 @@
   },
   "configurator": {
     "title": "3D Configurator for fair price"
+  },
+  "login": {
+    "title": "Login"
   }
 }
